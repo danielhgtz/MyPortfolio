@@ -1,7 +1,9 @@
-.daniel {
+.navbarName {
   color: white;
   font-family: "Caveat", cursive;
   cursor: pointer;
+  margin: 0px;
+  background: rgba(100, 200, 200, 0);
 }
 nav {
   display: flex;
@@ -17,19 +19,22 @@ nav {
   padding-left: 0px;
   right: 0px;
   left: 0px;
-
-  border: 1px solid #d30000;
 }
 
 .nameContainer {
-  margin-left: 2%;
-  margin-right: 40%;
+  margin-left: 70px;
+  margin-right: 35%;
+  width: 180px;
+}
+.linkContainer {
+  display: flex;
+  justify-content: space-between;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-  font-family: "Caveat", cursive;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 a {
@@ -44,6 +49,8 @@ a {
   background-repeat: no-repeat;
 
   transition: background-size 400ms;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 a:hover {

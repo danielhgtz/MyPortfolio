@@ -1,0 +1,28 @@
+.color {
+  color: white;
+}
+
+.homeIntroductionDiv {
+  padding-top: 180px;
+
+  display: flex;
+}
+
+.homeIntroductionDivText {
+  margin: 0px 50px;
+  padding-bottom: 100px;
+}
+
+.homeIntroductionImage {
+  margin: 110px 50px auto 50px;
+}
+
+.homeBlueColor {
+  color: rgb(0, 128, 255);
+  font-weight: bold;
+}
+
+.homeIntroductionInnerText {
+  font-family: "Heebo", sans-serif;
+  color: white;
+}
