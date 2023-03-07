@@ -1,0 +1,32 @@
+.mainDiv {
+  color: white;
+  padding-bottom: 150px;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.div1 {
+  border: 2px solid rgb(0, 128, 255);
+  height: 140px;
+  width: 180px;
+  margin: 15px;
+  border-radius: 5px;
+  display: flex;
+  position: relative;
+  /* cursor: pointer; */
+}
+.innerDiv {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.row :hover {
+  transform: scale(1.1);
+}

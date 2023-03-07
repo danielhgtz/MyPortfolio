@@ -13,7 +13,11 @@ export const HomeMain = () => {
         </h1>
         <ReactRotatingText
           color={"rgb(0, 128, 255)"}
-          items={["Front-end Developer", "Back-end Developer", "Lawyer"]}
+          items={[
+            "Front-end Developer",
+            "Back-end Developer",
+            "Corporate Lawyer",
+          ]}
         />
       </div>
       <div className="homeDivProfilePicture">

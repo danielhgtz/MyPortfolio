@@ -1,28 +1,80 @@
-.color {
+.HIColor {
   color: white;
 }
 
-.homeIntroductionDiv {
+.centerFirstDiv {
   padding-top: 180px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
 
+.homeIntroductionDiv {
   display: flex;
 }
 
-.homeIntroductionDivText {
+.divImage {
+  margin: 40px 40px auto 40px;
+}
+
+.divText {
   margin: 0px 50px;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
+  font-family: "Heebo", sans-serif;
 }
 
-.homeIntroductionImage {
-  margin: 110px 50px auto 50px;
-}
-
-.homeBlueColor {
+.blueColor {
   color: rgb(0, 128, 255);
   font-weight: bold;
 }
 
-.homeIntroductionInnerText {
+.socialDiv {
+  width: 200px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.socialTitle {
+  display: flex;
+  margin: auto;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.socialLinks {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+}
+
+.github {
+  margin: auto;
+}
+
+.linkedin {
+  margin: auto;
+}
+.github:hover {
+  background: #333333;
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+.linkedin:hover {
+  background: #0a66c2;
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+.connectionText {
+  padding-top: 20px;
   font-family: "Heebo", sans-serif;
   color: white;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  padding-bottom: 250px;
+  font-size: 20px;
 }

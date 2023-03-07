@@ -1,0 +1,33 @@
+.color {
+  color: white;
+  pointer-events: none;
+}
+.HPDiv {
+  padding-bottom: 180px;
+}
+
+.HPContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.HPInnerDiv {
+  position: relative;
+  width: 380px;
+  height: 530px;
+  border: solid 2px rgb(0, 128, 255);
+  border-radius: 5px;
+  margin: 15px 15px;
+}
+
+.HPContainer :hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+.HPIndividualDiv {
+  pointer-events: none;
+  color: white;
+}
