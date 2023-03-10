@@ -1,7 +1,15 @@
-.mainDiv {
+.mainDivTools {
   color: white;
-  padding-bottom: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
+
+.mainDivSkills {
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .row {
   display: flex;
   justify-content: center;
@@ -17,6 +25,7 @@
   border-radius: 5px;
   display: flex;
   position: relative;
+
   /* cursor: pointer; */
 }
 .innerDiv {
@@ -29,4 +38,10 @@
 
 .row :hover {
   transform: scale(1.1);
+  transition: 0.4s;
+}
+
+.gitHubVector {
+  width: "80px";
+  height: "80px";
 }

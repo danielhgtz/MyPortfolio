@@ -1,45 +1,60 @@
+import { VisualStudioVector } from "../../../../../Assets/ToolsVectors/VisualStudioVector";
+import { GitHubVector } from "../../../../../Assets/ToolsVectors/GitHubVector";
+import { FigmaVector } from "../../../../../Assets/ToolsVectors/FigmaVectorVector";
+import { PhotoShopVector } from "../../../../../Assets/ToolsVectors/PhotoShopVector";
+import { PostmanVector } from "../../../../../Assets/ToolsVectors/PostmanVector";
+import { SlackVector } from "../../../../../Assets/ToolsVectors/SlackVector";
+import { MicrosoftOfficeVector } from "../../../../../Assets/ToolsVectors/MicrosoftOfficeVector";
+import { AwsVector } from "../../../../../Assets/ToolsVectors/AwsVector";
+
 import "../HomeSkills&Tools.css";
-import {
-  visualStudioVector,
-  gitHubVector,
-  figmaVector,
-  photoShopVector,
-  postmanVector,
-  slackVector,
-  microsoftOfficeVector,
-  awsVector,
-} from "../../../../../Assets/ToolsVectors/ToolsVectors";
 
 export const HomeTools = () => {
   return (
     <div>
-      <div className="mainDiv">
+      <div className="mainDivTools">
         <h1>Software & Tools:</h1>
 
         <div className="row">
           <div className="div1">
-            <div className="innerDiv">{visualStudioVector}</div>
+            <div className="innerDiv">
+              <VisualStudioVector />
+            </div>
           </div>
           <div className="div1">
-            <div className="innerDiv">{gitHubVector}</div>
+            <div className="innerDiv">
+              <GitHubVector className="gitHubVector" />
+            </div>
           </div>
           <div className="div1">
-            <div className="innerDiv">{figmaVector}</div>
+            <div className="innerDiv">
+              <FigmaVector />
+            </div>
           </div>
           <div className="div1">
-            <div className="innerDiv">{photoShopVector}</div>
+            <div className="innerDiv">
+              <PhotoShopVector />
+            </div>
           </div>
           <div className="div1">
-            <div className="innerDiv">{postmanVector}</div>
+            <div className="innerDiv">
+              <PostmanVector />
+            </div>
           </div>
           <div className="div1">
-            <div className="innerDiv">{slackVector}</div>
+            <div className="innerDiv">
+              <SlackVector />
+            </div>
           </div>
           <div className="div1">
-            <div className="innerDiv">{microsoftOfficeVector}</div>
+            <div className="innerDiv">
+              <MicrosoftOfficeVector />
+            </div>
           </div>
           <div className="div1">
-            <div className="innerDiv"> {awsVector}</div>
+            <div className="innerDiv">
+              <AwsVector />
+            </div>
           </div>
         </div>
       </div>

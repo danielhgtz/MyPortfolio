@@ -1,15 +1,14 @@
-import { profileImgVector } from "../../../../Assets/Vectors";
 import { TiltComponent } from "../../../../Components/TiltComponent/TiltComponent";
-import "./HomeIntroductionText.css";
 import { Button } from "antd";
-import {
-  gitHubVector,
-  linkedinVector,
-} from "../../../../Assets/SocialVecotors/SocialsVectors";
+import { LinkedinVector } from "../../../../Assets/SocialVecotors/LinkedinVector";
+import { GitHubWhiteVector } from "../../../../Assets/SocialVecotors/GitHubWhiteVector";
+import personalImage from "../../../../Assets/PersonalImages/personalImage2.jpg";
 
-export const HomeIntroductionText = () => {
+import "./HomeIntroductionText.css";
+
+export const HomeIntroductionText = ({ homeAboutRef }) => {
   return (
-    <div className="HIColor">
+    <div ref={homeAboutRef} className="HIColor">
       <div className="centerFirstDiv">
         <h1>
           LET ME <span className="blueColor">INTRODUCE </span>
@@ -18,7 +17,10 @@ export const HomeIntroductionText = () => {
       </div>
       <div className="homeIntroductionDiv">
         <div className="divImage">
-          <TiltComponent param={profileImgVector} />
+          <TiltComponent
+            className={"tiltComponentOverraide"}
+            paramImg={personalImage}
+          />
         </div>
         <div className="divText">
           <ul>
@@ -51,14 +53,14 @@ export const HomeIntroductionText = () => {
             size="large"
             className="github"
             shape="circle"
-            icon={gitHubVector}
+            icon={<GitHubWhiteVector />}
             href="https://github.com/danielhgtz"
           />
           <Button
             size="large"
             className="linkedin"
             shape="circle"
-            icon={linkedinVector}
+            icon={<LinkedinVector />}
             href="https://www.linkedin.com/in/danielhgtz/"
           />
         </div>

@@ -5,9 +5,9 @@ import { NutritionApp } from "./Projects/NutritionApp";
 import { Planodi } from "./Projects/Planodi";
 import { Portfolio } from "./Projects/Portfolio";
 
-export const HomeProjects = () => {
+export const HomeProjects = ({ homeProjectsRef }) => {
   return (
-    <div className="HPDiv">
+    <div ref={homeProjectsRef} className="HPDiv">
       <h1 className="color">My recent Projects:</h1>
 
       <div className="HPContainer">

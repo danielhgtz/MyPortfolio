@@ -3,7 +3,7 @@
 }
 
 .centerFirstDiv {
-  padding-top: 180px;
+  padding-top: 50px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -17,6 +17,13 @@
   margin: 40px 40px auto 40px;
 }
 
+.tiltComponentOverraide {
+  display: flex;
+  height: 375px;
+  width: 420px;
+  background-color: rgb(0, 128, 255);
+  border-radius: 10%;
+}
 .divText {
   margin: 0px 50px;
   padding-bottom: 10px;
@@ -53,10 +60,16 @@
 
 .github {
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .linkedin {
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .github:hover {
   background: #333333;
@@ -75,6 +88,6 @@
   display: flex;
   margin: auto;
   justify-content: center;
-  padding-bottom: 250px;
+  padding-bottom: 60px;
   font-size: 20px;
 }

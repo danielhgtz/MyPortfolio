@@ -1,6 +1,10 @@
-.tiltComponent {
-  height: 400px;
+.imgScale {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  height: auto;
   width: 400px;
-  background-color: rgb(0, 128, 255);
-  border-radius: 50%;
+  border-radius: 10%;
 }

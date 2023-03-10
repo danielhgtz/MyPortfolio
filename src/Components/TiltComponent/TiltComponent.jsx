@@ -1,9 +1,9 @@
 import React from "react";
 import Tilt from "react-parallax-tilt";
-import { imgVector } from "../../Assets/Vectors";
+
 import "./TiltComponent.css";
 
-export const TiltComponent = ({ param }) => {
+export const TiltComponent = ({ className, paramImg }) => {
   return (
     <Tilt
       tiltMaxAngleX={5}
@@ -11,7 +11,9 @@ export const TiltComponent = ({ param }) => {
       perspective={300}
       glareEnable={false}
     >
-      <div className="tiltComponent">{param}</div>
+      <div className={className}>
+        <img className="imgScale" src={paramImg} />
+      </div>
     </Tilt>
   );
 };
