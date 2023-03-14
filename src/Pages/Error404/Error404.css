@@ -1,0 +1,31 @@
+.error404MainTitle {
+  font-size: 70px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Gloria Hallelujah", cursive;
+  margin-bottom: 0%;
+}
+
+.error404ContentDiv {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.centerContent {
+  margin: auto 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.error404HomeBtn {
+  width: 22%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}

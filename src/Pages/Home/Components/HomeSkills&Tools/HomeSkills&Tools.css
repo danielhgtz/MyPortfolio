@@ -38,10 +38,19 @@
 
 .row :hover {
   transform: scale(1.1);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 1de48b3 (fix)
   transition: 0.4s;
 }
 
 .gitHubVector {
   width: "80px";
   height: "80px";
+<<<<<<< HEAD
+=======
+>>>>>>> bce94ca7e6de6a92dafbb6ab56e1906b28659e6f
+>>>>>>> 1de48b3 (fix)
 }

@@ -22,9 +22,19 @@ export const HomeTools = () => {
             </div>
           </div>
           <div className="div1">
+<<<<<<< HEAD
             <div className="innerDiv">
               <GitHubVector className="gitHubVector" />
             </div>
+=======
+<<<<<<< HEAD
+            <div className="innerDiv">{gitHubVector}</div>
+=======
+            <div className="innerDiv">
+              <GitHubVector className="gitHubVector" />
+            </div>
+>>>>>>> bce94ca7e6de6a92dafbb6ab56e1906b28659e6f
+>>>>>>> 1de48b3 (fix)
           </div>
           <div className="div1">
             <div className="innerDiv">

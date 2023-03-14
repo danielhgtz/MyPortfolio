@@ -11,6 +11,20 @@ export const HomeProjects = ({ homeProjectsRef }) => {
       <h1 className="color">My recent Projects:</h1>
 
       <div className="HPContainer">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        <LaborSettlementProject />
+
+        <Planodi />
+
+        <Portfolio />
+
+        <NutritionApp />
+
+        <AdministrationPallets />
+=======
+>>>>>>> 1de48b3 (fix)
         <div className="HPInnerDiv">
           <div className="HPIndividualDiv">
             <LaborSettlementProject />
@@ -36,6 +50,10 @@ export const HomeProjects = ({ homeProjectsRef }) => {
             <AdministrationPallets />
           </div>
         </div>
+<<<<<<< HEAD
+=======
+>>>>>>> bce94ca7e6de6a92dafbb6ab56e1906b28659e6f
+>>>>>>> 1de48b3 (fix)
       </div>
     </div>
   );

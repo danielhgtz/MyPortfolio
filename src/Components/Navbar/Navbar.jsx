@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+//import { useNavigate } from "react-router-dom";
+//import { useIsLogged } from "../../helper/Context";
+
+import "./Navbar.css";
+import {
+  AboutSVGFile,
+  ExperienceSVGFile,
+  ProjectsSVGFile,
+  ResumeSVGFile,
+} from "./NavbarSVG/NavbarSVGFile";
+
+export const Navbar = () => {
+  //const navigate = useNavigate();
+  //const { isLogged, setIsLogged } = useIsLogged();
+
+  const navigateTop = () => {
+    window.scrollTo(0, 0);
+=======
+>>>>>>> 1de48b3 (fix)
 import React, { useState } from "react";
 
 import { navigateTop } from "../../Utilities/Utilities";
@@ -18,6 +40,10 @@ export const Navbar = ({ homeAboutRef, homeSkillsRef, homeProjectsRef }) => {
     } else {
       setNavbarBoolean(false);
     }
+<<<<<<< HEAD
+=======
+>>>>>>> bce94ca7e6de6a92dafbb6ab56e1906b28659e6f
+>>>>>>> 1de48b3 (fix)
   };
 
   window.addEventListener("scroll", changeNavBarBackground);
@@ -64,8 +90,18 @@ export const Navbar = ({ homeAboutRef, homeSkillsRef, homeProjectsRef }) => {
           </a>
         </div>
         <div>
+<<<<<<< HEAD
           <a className="navResume">
             <ResumeVector />
+=======
+<<<<<<< HEAD
+          <a className="resume">
+            <ResumeSVGFile />
+=======
+          <a className="navResume">
+            <ResumeVector />
+>>>>>>> bce94ca7e6de6a92dafbb6ab56e1906b28659e6f
+>>>>>>> 1de48b3 (fix)
             Resume
           </a>
         </div>

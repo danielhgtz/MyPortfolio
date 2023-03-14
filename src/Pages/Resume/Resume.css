@@ -1,0 +1,55 @@
+.navResumePDF {
+  display: flex;
+  margin: auto;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+
+  color: white;
+  align-items: center;
+  padding-right: 0px;
+  padding-left: 0px;
+  right: 0px;
+  left: 0px;
+  height: 50px;
+  background-color: #1b1a2ea9 !important;
+
+  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  backdrop-filter: blur(15px) !important;
+}
+
+.nameContainerPDF {
+  margin-left: 70px;
+  margin-right: 70%;
+  width: 180px;
+}
+
+.navbarNamePDF {
+  color: white;
+  font-family: "Caveat", cursive;
+  cursor: pointer;
+  margin: 0px;
+  background: rgba(100, 200, 200, 0);
+}
+
+.downloadContainerPDF a {
+  margin: auto;
+  display: flex;
+
+  cursor: pointer;
+  background: linear-gradient(
+      to right,
+      rgba(100, 200, 200, 0),
+      rgba(100, 200, 200, 0)
+    ),
+    linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+
+  transition: background-size 400ms;
+}
+
+a:hover {
+  background-size: 0 3px, 100% 3px;
+}
