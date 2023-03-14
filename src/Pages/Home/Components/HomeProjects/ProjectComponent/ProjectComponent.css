@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 .HPInnerDiv {
   position: relative;
   width: 380px;
@@ -37,20 +34,6 @@
 
   flex-direction: column;
   align-items: center;
-=======
->>>>>>> 1de48b3 (fix)
-.projectComponentDiv {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  justify-content: center;
-  padding: 7px;
-  font-family: "Heebo", sans-serif;
-<<<<<<< HEAD
-=======
->>>>>>> bce94ca7e6de6a92dafbb6ab56e1906b28659e6f
->>>>>>> 1de48b3 (fix)
 }
 
 .PCTitle {
@@ -63,38 +46,19 @@
 }
 
 .PCDescriptionProject {
-<<<<<<< HEAD
-  font-size: 20px;
-=======
-<<<<<<< HEAD
   margin: 5px 15px;
   font-size: 18px;
-=======
-  font-size: 20px;
->>>>>>> bce94ca7e6de6a92dafbb6ab56e1906b28659e6f
->>>>>>> 1de48b3 (fix)
   text-align: justify;
 }
 
 .PCTecnologies {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
   display: flex;
   justify-content: center;
   margin: 0px auto 5px auto;
-=======
->>>>>>> bce94ca7e6de6a92dafbb6ab56e1906b28659e6f
->>>>>>> 1de48b3 (fix)
   font-size: 18px;
   text-align: justify;
 }
 
-<<<<<<< HEAD
-.PCButton {
-  margin: auto 5px;
-=======
-<<<<<<< HEAD
 .PCFrameworks {
   display: flex;
   justify-content: center;
@@ -205,9 +169,4 @@
   100% {
     background-position: 0 0;
   }
-=======
-.PCButton {
-  margin: auto 5px;
->>>>>>> bce94ca7e6de6a92dafbb6ab56e1906b28659e6f
->>>>>>> 1de48b3 (fix)
 }

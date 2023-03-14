@@ -1,8 +1,7 @@
-export const GitVector = () => {
+export const GitVector = ({ className }) => {
   return (
     <svg
-      width="120px"
-      height="120px"
+      className={className}
       viewBox="0 -74 256 256"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"

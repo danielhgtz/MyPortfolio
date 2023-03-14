@@ -16,13 +16,7 @@ export const HomeMain = () => {
           items={[
             "Front-end Developer",
             "Back-end Developer",
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
             "Full Stack Developer",
-=======
->>>>>>> bce94ca7e6de6a92dafbb6ab56e1906b28659e6f
->>>>>>> 1de48b3 (fix)
             "Corporate Lawyer",
           ]}
         />

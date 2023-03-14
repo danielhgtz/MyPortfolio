@@ -1,14 +1,12 @@
-export const JSVector = () => {
+export const JSVector = ({ className }) => {
   return (
     <svg
-      width="80px"
-      height="80px"
+      className={className}
       viewBox="0 0 256 256"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       xlink="http://www.w3.org/1999/xlink"
       preserveAspectRatio="xMidYMid"
-      fill="#ffffff"
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g

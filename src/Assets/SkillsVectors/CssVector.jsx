@@ -1,21 +1,7 @@
-<<<<<<< HEAD
-export const CssVector = () => {
-  return (
-    <svg
-=======
-<<<<<<< HEAD
 export const CssVector = ({ className }) => {
   return (
     <svg
       className={className}
-=======
-export const CssVector = () => {
-  return (
-    <svg
->>>>>>> bce94ca7e6de6a92dafbb6ab56e1906b28659e6f
->>>>>>> 1de48b3 (fix)
-      width="80px"
-      height="80px"
       viewBox="0 0 32 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

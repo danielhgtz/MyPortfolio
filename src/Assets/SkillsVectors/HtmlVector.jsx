@@ -1,8 +1,7 @@
-export const HtmlVector = () => {
+export const HtmlVector = ({ className }) => {
   return (
     <svg
-      width="100px"
-      height="100px"
+      className={className}
       viewBox="0 0 32 32"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

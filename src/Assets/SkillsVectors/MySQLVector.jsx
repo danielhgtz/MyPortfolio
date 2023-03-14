@@ -1,8 +1,7 @@
-export const MySQLVector = () => {
+export const MySQLVector = ({ className }) => {
   return (
     <svg
-      width="140px"
-      height="140px"
+      className={className}
       viewBox="-18.458 -22.75 191.151 191.151"
       xmlns="http://www.w3.org/2000/svg"
       fill="#000000"

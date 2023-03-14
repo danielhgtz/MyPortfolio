@@ -1,9 +1,8 @@
-export const ExpressVector = () => {
+export const ExpressVector = ({ className }) => {
   return (
     <svg
+      className={className}
       fill="#ffffff"
-      width="80px"
-      height="80px"
       viewBox="0 0 24 24"
       role="img"
       xmlns="http://www.w3.org/2000/svg"

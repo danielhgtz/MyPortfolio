@@ -1,8 +1,7 @@
-export const NodeJS = () => {
+export const NodeJSVector = ({ className }) => {
   return (
     <svg
-      width="120px"
-      height="120px"
+      className={className}
       viewBox="0 -183.5 512 512"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMinYMin meet"

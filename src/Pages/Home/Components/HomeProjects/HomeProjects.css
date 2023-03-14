@@ -4,14 +4,8 @@
 }
 .HPDiv {
   padding-bottom: 180px;
-<<<<<<< HEAD
   padding-top: 40px;
-=======
-<<<<<<< HEAD
-=======
-  padding-top: 40px;
->>>>>>> bce94ca7e6de6a92dafbb6ab56e1906b28659e6f
->>>>>>> 1de48b3 (fix)
+  position: relative;
 }
 
 .HPContainer {
@@ -19,38 +13,9 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
   position: relative;
 }
 /* .HPContainer :hover {
   transform: scale(1.05);
   transition: 0.5s;
 } */
-=======
->>>>>>> 1de48b3 (fix)
-}
-
-.HPInnerDiv {
-  position: relative;
-  width: 380px;
-  height: 530px;
-  border: solid 2px rgb(0, 128, 255);
-  border-radius: 5px;
-  margin: 15px 15px;
-}
-
-.HPContainer :hover {
-  transform: scale(1.05);
-  transition: 0.4s;
-}
-
-.HPIndividualDiv {
-  pointer-events: none;
-  color: white;
-}
-<<<<<<< HEAD
-=======
->>>>>>> bce94ca7e6de6a92dafbb6ab56e1906b28659e6f
->>>>>>> 1de48b3 (fix)

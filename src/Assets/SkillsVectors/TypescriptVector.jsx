@@ -1,12 +1,11 @@
-export const TypescriptVector = () => {
+export const TypescriptVector = ({ className }) => {
   return (
     <svg
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       aria-label="TypeScript"
       role="img"
       viewBox="0 0 512 512"
-      width="80px"
-      height="80px"
       fill="#000000"
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>

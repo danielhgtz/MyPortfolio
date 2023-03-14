@@ -1,8 +1,7 @@
-export const ReactVector = () => {
+export const ReactVector = ({ className }) => {
   return (
     <svg
-      width="80px"
-      height="80px"
+      className={className}
       viewBox="0 -14 256 256"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
