@@ -1,0 +1,103 @@
+.homeMainTitle {
+  font-size: 70px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.placerHome {
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+}
+.placerHome .shapeHome {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.shapeHome:first-child {
+  background: #c04848; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #480048,
+    #c04848
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #480048,
+    #c04848
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin: 5% 140%;
+}
+.shapeHome:last-child {
+  background: #24c6dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #514a9d,
+    #24c6dc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #514a9d,
+    #24c6dc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin: 53% -80% auto;
+}
+.homeDiv {
+  display: flex;
+  border-color: rgb(0, 0, 0);
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.188);
+  margin-top: 2%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 10px;
+  z-index: 1;
+  backdrop-filter: blur(1px);
+  flex-direction: column;
+}
+
+.homeSecondaryTitle {
+  font-size: 50px;
+  font-weight: 700;
+
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  margin: 10px auto auto auto;
+}
+.verticalDiv {
+  display: flex;
+
+  height: 300px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.homeBtn {
+  width: 50%;
+  margin: auto 20px;
+}
+
+.align {
+  text-align: center;
+  display: flex;
+}

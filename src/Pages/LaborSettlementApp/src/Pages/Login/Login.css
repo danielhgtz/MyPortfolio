@@ -1,0 +1,112 @@
+body {
+  background: linear-gradient(90deg, #f8d5c6, #2e537c);
+}
+
+/* .home {
+  display: flex;
+  margin: auto;
+} */
+
+.placerLogin {
+  width: 430px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+.placerLogin .shapeLogin {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.shapeLogin:first-child {
+  background: #c04848; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #480048,
+    #c04848
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #480048,
+    #c04848
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin: -12% 70%;
+}
+.shapeLogin:last-child {
+  background: #24c6dc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #514a9d,
+    #24c6dc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #514a9d,
+    #24c6dc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin: 100% auto auto -20%;
+}
+
+.login-Form {
+  height: 520px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+}
+.login-Form * {
+  font-family: "Poppins", sans-serif;
+
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+
+.secondaryTitle {
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  margin: auto;
+  color: black;
+}
+
+label {
+  display: block;
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+::placeholder {
+  color: #e5e5e5;
+}
+
+.loginBtn {
+  margin-top: 50px;
+  width: 100%;
+
+  padding: auto;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.site-form-item-icon {
+  /* background-color: gray; */
+}

@@ -1,0 +1,29 @@
+.instructionMessageBox {
+  border-color: rgb(0, 0, 0);
+  height: 35px;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.188);
+  display: grid;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  justify-content: center;
+  align-content: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 10px;
+  z-index: 1;
+  backdrop-filter: blur(1px);
+}
+
+.instructionMessageBox p {
+  font-size: 20px;
+  display: inline;
+}
+
+.optionalAsterisk {
+  color: red;
+}

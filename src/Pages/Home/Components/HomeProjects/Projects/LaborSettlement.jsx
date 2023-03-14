@@ -49,6 +49,7 @@ export const LaborSettlementProject = () => {
           "https://github.com/danielhgtz/LaborSettlementCalculatorApp"
         }
         booleanDemo={true}
+        demoLink={"./LaborSettlement"}
       />
     </div>
   );

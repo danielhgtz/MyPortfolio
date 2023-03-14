@@ -1,0 +1,186 @@
+.SCDResult {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: white;
+  width: fit-content;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin: 0px auto;
+}
+
+/* .container {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  justify-content: center;
+  width: 80%;
+  height: 100%;
+  border-radius: 7px;
+  margin: auto;
+} */
+
+.columTotalWidth {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.colum {
+  display: flex;
+}
+
+/* .container p {
+  margin: 0px auto;
+} */
+
+/* .containerInnerDivCalendar {
+  background-color: bisque;
+  display: flex;
+  height: 50px;
+  width: 50%;
+  border-radius: 7px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  margin: 3px 0px;
+} */
+
+.containerInnerDiv {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  margin: 5px 0px;
+  align-items: center;
+  padding: 2px 0px;
+}
+
+.logoInnerDiv {
+  height: 100%;
+  width: 17%;
+  border-radius: 7px;
+  padding: inherit;
+  border: solid 1px;
+  border-color: black;
+}
+
+.logoDiv {
+  margin: auto 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+  border-radius: 5px;
+  width: 35px;
+  height: 35px;
+  border: solid 1px;
+  border-color: black;
+}
+
+.dividerCalendar {
+  border-left: 1px solid #38546d;
+  display: flex;
+  align-content: center;
+  height: 30px;
+  position: relative;
+  margin: auto 0px;
+}
+
+.dividerSalary {
+  border-left: 1px solid #38546d;
+  display: flex;
+  align-content: center;
+  height: 68px;
+  position: relative;
+  margin: auto 0px;
+}
+
+.dividerVacations {
+  border-left: 1px solid #38546d;
+  display: flex;
+  align-content: center;
+  height: 85px;
+  position: relative;
+  margin: auto 0px;
+}
+
+.dividerAguinaldo {
+  border-left: 1px solid #38546d;
+  display: flex;
+  align-content: center;
+  height: 65px;
+  position: relative;
+  margin: auto 0px;
+}
+
+.dividerPrimaDeAntiguedad {
+  border-left: 1px solid #38546d;
+  display: flex;
+  align-content: center;
+  height: 33px;
+  position: relative;
+  margin: auto 0px;
+}
+
+.dividerFondoDeAhorro {
+  border-left: 1px solid #38546d;
+  display: flex;
+  align-content: center;
+  height: 50px;
+  position: relative;
+  margin: auto 0px;
+}
+.divider {
+  border-left: 1px solid #38546d;
+  display: flex;
+  align-content: center;
+  height: 50px;
+  position: relative;
+  margin: auto 0px;
+}
+
+.image {
+  width: 9%;
+  margin: auto 8px;
+}
+
+.titleDiv {
+  margin: auto auto auto 0px;
+  padding: 0px 0px 0px 5px;
+  border: solid;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 1px;
+  border-color: black;
+}
+
+.title {
+  display: flex;
+
+  align-content: center;
+
+  font-weight: bold;
+}
+.results {
+  display: contents;
+}
+
+.column1 {
+  margin: 2px 2.5px 2px 5px;
+  width: 50%;
+  height: fit-content;
+}
+
+.column2 {
+  width: 50%;
+  height: fit-content;
+  margin: 2px 5px 2px 2.5px;
+}

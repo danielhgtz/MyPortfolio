@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import { Button } from "antd";
 import { GitHubVector } from "../../../../../Assets/ToolsVectors/GitHubVector";
 import { StartVector } from "../../../../../Assets/ProjectVectors/StartVector";
@@ -15,8 +14,6 @@ export const ProjectComponent = ({
   booleanDemo,
   demoLink,
 }) => {
-  const navigate = useNavigate();
-
   return (
     <div className="HPInnerDiv">
       <div className="HPIndividualDiv">

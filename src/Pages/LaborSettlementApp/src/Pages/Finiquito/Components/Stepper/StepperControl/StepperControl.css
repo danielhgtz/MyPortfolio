@@ -1,0 +1,12 @@
+.allignCenter {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.leftButtonParentStepper {
+  scale: 105%;
+}
+
+.rigthButtonParentStepper {
+  scale: 105%;
+}

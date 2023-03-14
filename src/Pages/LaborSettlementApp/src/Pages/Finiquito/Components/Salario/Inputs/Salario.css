@@ -1,0 +1,58 @@
+.salarioFinalDiv {
+  font-family: "Raleway", sans-serif;
+  border-radius: 10px;
+  text-align: center;
+  width: 70%;
+  margin: 0px;
+  align-items: center;
+  margin: auto;
+  margin-top: 60px;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.instructions {
+  display: flex;
+}
+
+.firstBoxModalidadDePago {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 300px;
+  height: 150px;
+  padding: 20px;
+
+  flex-direction: column;
+  color: black;
+  font-size: 20px;
+
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.secondtBoxModalidadDePago {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  width: 300px;
+  height: 150px;
+  padding: 10px;
+  flex-direction: column;
+
+  color: black;
+  margin-top: 0px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.secondtBoxModalidadDePago p {
+  text-align: left;
+  font-size: 20px;
+  margin-top: 0px;
+}
