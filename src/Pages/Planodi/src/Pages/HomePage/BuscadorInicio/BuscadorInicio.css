@@ -1,0 +1,421 @@
+.inicio-BG{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.home-page-image-bg{
+    position: relative;
+    width: 100%;
+    height: 320px;
+    /*background: url('../../../Assets/img/homepage/fondo_planodi_l.webp'), linear-gradient(to top, rgb(233, 218, 255), rgb(241, 250, 255));*/
+    background: url('../../../Assets/img/homepage/fondo_planodi.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 4rem;
+}
+.home-page-image-color{
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.inicio-buscador-header p{
+    text-align: center;
+    color: white;
+}
+.inicio-buscadorBox{
+    height: 3.7rem;
+    background-color: white;
+    position: absolute;
+    width: 550px;
+    border-radius: 99px;
+    top: 10.2rem;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    -webkit-box-shadow: 0 0 13px 4px rgba(59,59,59,0.5);
+    box-shadow: 0 0 13px 4px rgba(59,59,59,0.5);
+}
+.inicio-titulo{
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    color: #3b3b3b;
+    font-size: 1.6rem;
+    position: absolute;
+    left: 50%;
+    top: 5.8rem;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+.inicio-desc{
+    font-weight: 400;
+    color: #3b3b3b;
+    font-size: 0.9rem;
+    position: absolute;
+    left: 50%;
+    top: 8.5rem;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 100;
+    width: 400px;
+    border-radius: 99px;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+}
+
+.inicio-input-1, .inicio-input-2{
+    font-family: Roboto, sans-serif;
+    width: 100%;
+    height: 3.6rem;
+    color: #3b3b3b;
+    padding-top: 1rem;
+    border: none;
+    outline: none;
+    padding-left: 1rem;
+    border-radius: 99px;
+    transition: 0.2s;
+    background-color: transparent;
+}
+
+.inicio-input-1:hover, .inicio-input-2:hover{
+    background-color: rgba(217, 217, 217, 0.3);
+}
+.inicio-input-1:focus, .inicio-input-2:focus{
+    background-color: rgba(217, 217, 217, 0.3);
+}
+
+.inicio-input-1:focus + .inicio-label .inicio-content, .inicio-input-1:not(:placeholder-shown) + .inicio-label .inicio-content{
+    transform: translateY(-130%);
+    font-size: 13px;
+    color: #888784;
+}
+.inicio-input-2:focus + .inicio-label .inicio-content, .inicio-input-2:not(:placeholder-shown) + .inicio-label .inicio-content{
+    transform: translateY(-130%);
+    font-size: 13px;
+    color: #888784;
+}
+
+.inicio-label{
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.inicio-content{
+    font-family: Roboto, sans-serif;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1rem;
+    color: #888784;
+    transition: 0.2s;
+}
+
+.inicio-boton-go{
+    /*background-color: #8c50ff !important;*/
+    /*background: linear-gradient(303.62deg, rgba(140, 80, 255, 0.14) 55.87%, rgba(78, 23, 185, 0.16) 139.83%) !important;*/
+    background: #8c50ff !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white !important;
+    border: solid 1px #8c50ff !important;
+}
+.inicio-boton-go:focus{
+    outline: none;
+}
+
+.homepage-box-location-wrp{
+    position: absolute;
+    /*top:18.9rem;*/
+    top: 14rem;
+    /*right: 7%;*/
+    left: 50%;
+    transform: translateX(-50%);
+    width: 550px;
+    background-color: white;
+    z-index: 998;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    padding: 32px 0 1rem 0;
+}
+    .homepage-box-loc-div{
+        display: flex;
+        padding: 1.2rem;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        justify-content: space-between;
+        /*background-color: rgba(188, 221, 250, 0.09);*/
+        background-color: white;
+        height: 200px;
+        font-size: 0.9rem;
+    }
+    .homepage-box-loc-div-title{
+        color: #aeaeae;
+        width: 100%;
+        margin: 0 0 1rem 10px;
+        font-size: 0.8rem;
+    }
+    .homepage-box-loc-div-mun{
+        display: flex;
+        padding: 1rem;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        justify-content: space-between;
+        margin: 0;
+        height: 200px;
+        position: relative;
+        font-size: 0.9rem;
+    }
+    .homepage-box-loc-div-2{
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+    .homepage-box-loc-div-3{
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+        /*display: inline;*/
+        display: flex;
+    }
+    .homepage-box-loc-div-p{
+        color: #3b3b3b;
+        padding: 3px 10px;
+        border-radius: 5px;
+        margin: 0;
+        /*max-height: 26px;*/
+    }
+    .homepage-box-loc-div-p.active{
+        background-color: #3b3b3b;
+        color: white;
+    }
+    .homepage-box-loc-div-confirm{
+        height: 50px;
+        width: 100%;
+        box-sizing: border-box;
+        border-top: #f3f2f2 solid 1px;
+        margin: 0;
+        position: relative;
+    }
+
+.homepage-box-quebuscas-wrp{
+    position: absolute;
+    top: 14rem;
+    /*right: 7%;*/
+    left: 50%;
+    transform: translateX(-50%);
+    width: 550px;
+    background-color: white;
+    z-index: 998;
+    border-radius: 0 0 5px 5px;
+    display: flex;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    padding: 32px 0 1rem 0;
+}
+    .homepage-box-quebuscas-div{
+        display: flex;
+        padding: 1.2rem;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        justify-content: space-between;
+        /*background-color: rgba(188, 221, 250, 0.09);*/
+        background-color: white;
+        height: 200px;
+        font-size: 0.9rem;
+    }
+    .homepage-box-loc-div::-webkit-scrollbar, .homepage-box-loc-div-mun::-webkit-scrollbar, .homepage-box-quebuscas-div::-webkit-scrollbar{
+        width: 7px;
+        background-color: #f5f5f5;
+    }
+    .homepage-box-loc-div::-webkit-scrollbar-thumb, .homepage-box-loc-div-mun::-webkit-scrollbar-thumb, .homepage-box-quebuscas-div::-webkit-scrollbar-thumb{
+        border-radius: 99px;
+        background-color: #7c7c7c;
+    }
+    .horizontal-overflow-blur-white{
+        display: block;
+        position: absolute;
+        bottom: 0.45rem;
+        width: 97%;
+        height: 20px;
+        background: rgb(255,255,255);
+        background: linear-gradient(0deg, rgba(255,255,255,1) 58%, rgba(255,255,255,0) 86%);
+    }
+    .homepage-box-quebuscas-div-p{
+        color: #3b3b3b;
+        padding: 3px 10px;
+        border-radius: 5px;
+        margin: 0;
+    }
+    .homepage-box-quebuscas-div-p.active{
+        background-color: #3b3b3b;
+        color: white;
+    }
+
+@media screen and (max-width: 960px){
+    .inicio-BG{
+        height: auto;
+    }
+    .home-page-image-bg{
+        width: 100%;
+        border-radius: 0;
+        margin-top: 1rem;
+    }
+    .inicio-titulo{
+        font-size: 1.7rem;
+        top: 2.8rem;
+    }
+    .inicio-desc{
+        font-size: 0.8rem;
+        top: 5.2rem;
+        text-align: center;
+    }
+    .inicio-buscadorBox{
+        min-width: 60%;
+        border-radius: 10px;
+        top: 13rem;
+        height: 9rem;
+    }
+    .inicio-input-1{
+        border-radius: 10px 10px 0 0;
+    }
+    .inicio-input-2{
+        border-radius: 0;
+    }
+    .inicio-boton-go{
+        left: 50%;
+    }
+    /*ubication selector*/
+    .homepage-box-location-wrp{
+        z-index: 1000;
+        min-width: 60%;
+        padding: 0;
+        top: 16.6rem;
+    }
+    .homepage-box-loc-div{
+        padding: 1.2rem;
+        height: 200px;
+    }
+    .homepage-box-loc-div-title{
+        margin: 0 0 1rem 10px;
+    }
+    .homepage-box-loc-div-mun{
+        padding: 1rem;
+        margin: 0;
+        height: 200px;
+    }
+    /*que buscas selector*/
+    .homepage-box-quebuscas-wrp{
+        z-index: 1000;
+        min-width: 60%;
+        padding-top: 0;
+        top: 13.1rem;
+    }
+    .homepage-box-quebuscas-div{
+        padding: 1.2rem;
+        height: 200px;
+    }
+    .homepage-box-quebuscas-div-title{
+        margin: 0 0 1rem 10px;
+    }
+    .homepage-box-quebuscas-div-mun{
+        padding: 1rem;
+        margin: 0;
+        height: 200px;
+    }
+    .homepage-box-loc-div-search{
+        border-radius: 0 0 5px 5px;
+        width: 100%;
+        background: #8c50ff;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+    }
+    .homepage-box-loc-div-search:hover{
+        background: rgba(140,80,255,0.9);
+    }
+}
+
+
+
+@media screen and (max-width: 670px){
+
+    /*.inicio-buscadorBox{*/
+    /*    min-width: 60%;*/
+    /*    border-radius: 10px;*/
+    /*    top: 13rem;*/
+    /*    height: 9rem;*/
+    /*}*/
+
+    .inicio-titulo{
+        top: 4rem;
+        width: 100%;
+        text-align: center;
+        padding: 0 8%;
+        line-height: 1.9rem;
+        font-size: 1.5rem;
+    }
+    .inicio-desc{
+        top: 7rem;
+        width: 90%;
+    }
+    .inicio-buscadorBox{
+        width: 94%;
+        top: 14rem;
+    }
+    /*ubication selecto*/
+    .homepage-box-location-wrp{
+        width: 94%;
+        top: 17.7rem;
+    }
+    /*que buscas selector*/
+    .homepage-box-quebuscas-wrp{
+        width: 94%;
+        top: 14.2rem;
+    }
+}
+
+/*hover effects*/
+@media(hover: hover) and (pointer: fine) {
+    .homepage-box-loc-div-p:hover{
+        background-color: rgba(59, 59, 59, 0.7);
+        color: white;
+    }
+    .homepage-box-loc-div-p:hover.active:hover{
+        background-color: rgba(59, 59, 59, 1);
+    }
+    .homepage-box-quebuscas-div-p:hover{
+        background-color: rgba(59, 59, 59, 0.7);
+        color: white;
+    }
+    .homepage-box-quebuscas-div-p:hover.active:hover{
+        background-color: rgba(59, 59, 59, 0.7);
+    }
+}

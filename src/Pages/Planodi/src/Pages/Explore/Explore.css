@@ -1,0 +1,327 @@
+.wrapper-explore {
+  width: 100%;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  position: relative;
+}
+.explore-box-location-wrp {
+  position: absolute;
+  top: 10rem;
+  right: 7%;
+  height: 350px;
+  width: 850px;
+  background-color: white;
+  z-index: 100000;
+  border-radius: 5px;
+  display: flex;
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+}
+.explore-box-location-wrp-fixed {
+  position: fixed;
+  top: 90px;
+  right: 7%;
+  height: 350px;
+  width: 850px;
+  background-color: white;
+  z-index: 100000;
+  border-radius: 5px;
+  display: flex;
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+}
+.explore-box-loc-div {
+  display: flex;
+  padding: 1.2rem;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  justify-content: space-between;
+  background-color: rgba(188, 221, 250, 0.09);
+  height: 300px;
+}
+.explore-box-loc-div::-webkit-scrollbar, .explore-box-loc-div-mun::-webkit-scrollbar{
+  width: 7px;
+  height: 0;
+  background-color: #f5f5f5;
+}
+.explore-box-loc-div::-webkit-scrollbar-thumb, .explore-box-loc-div-mun::-webkit-scrollbar-thumb{
+  border-radius: 99px;
+  background-color: #7c7c7c;
+}
+.explore-box-loc-div-title {
+  font-weight: 500;
+  color: #3b3b3b;
+  width: 100%;
+  margin: 0 0 1rem 10px;
+  font-size: 1rem;
+}
+.explore-box-loc-div-mun {
+  display: flex;
+  padding: 1rem;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  justify-content: space-between;
+  margin: 0;
+  height: 300px;
+  position: relative;
+}
+.explore-box-loc-div-2 {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  width: 33%;
+  margin-bottom: 10px;
+  display: flex;
+}
+.explore-box-loc-div-3 {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  /*display: inline;*/
+  display: flex;
+}
+.explore-box-loc-div-p {
+  color: #3b3b3b;
+  padding: 3px 10px;
+  border-radius: 5px;
+  margin: 0;
+}
+.explore-box-loc-div-p.active {
+  background-color: #0d3b66;
+  color: white;
+}
+.explore-box-loc-div-confirm {
+  height: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: #f3f2f2 solid 1px;
+  margin: 0;
+  position: relative;
+}
+.flex-wrp-explore {
+  min-width: 320px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 300px 1fr 1fr;
+  grid-template-rows: auto auto;
+  padding: 0 4%;
+  max-width: 1500px;
+}
+.explore-buscador-filtrosActivos {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.explore-buscador-filtrosActivos-top {
+  position: fixed;
+  padding-top: 20px;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur( 15px );
+  -webkit-backdrop-filter: blur( 15px );
+  width: 92%;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  overflow: hidden;
+}
+
+.filter-sect-expl {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  overflow: hidden;
+}
+.filter-sect-expl-top {
+  position: fixed;
+  top: 120px;
+  width: 300px;
+  z-index: 999;
+  background-color: white;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  overflow: hidden;
+}
+.filter-sect-expl-desactivados {
+  display: none;
+}
+.results-card-explore {
+  grid-column: 2/4;
+  grid-row: 2/3;
+  overflow: hidden;
+  position: relative;
+}
+.results-card-explore-filtros-desactivados {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.results-card-explore-top {
+  margin-top: 120px;
+}
+.result-number-exp-p {
+  margin: 0.5rem 0 0 0;
+  color: #94948c;
+  font-weight: 300;
+  font-size: 0.8rem;
+  width: 100%;
+  padding-left: 1.8rem;
+}
+.results-cards-no-results {
+  width: 100%;
+  text-align: center;
+  color: #94948c;
+  font-size: 0.9rem;
+}
+
+/* Celular */
+@media screen and (max-width: 960px) {
+  .flex-wrp-explore {
+    flex-direction: column;
+  }
+  .flex-wrp-explore {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 0 4%;
+  }
+  .explore-buscador-filtrosActivos {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .filter-sect-expl {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  .results-card-explore {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+  .filter-sect-expl-top {
+    top: 70px;
+    width: 92%;
+  }
+
+  /*ubication selector*/
+  .explore-box-location-wrp {
+    height: 450px;
+    width: 92%;
+    right: 4%;
+  }
+  .explore-box-location-wrp-fixed {
+    top: 90px;
+    height: 450px;
+    width: 92%;
+    right: 4%;
+  }
+  .explore-box-loc-div {
+    padding: 1.2rem;
+    height: 400px;
+  }
+  .explore-box-loc-div-title {
+    font-weight: 500;
+    margin: 0 0 1rem 10px;
+    font-size: 1rem;
+  }
+  .explore-box-loc-div-mun {
+    padding: 1rem;
+    margin: 0;
+    height: 400px;
+  }
+  .explore-box-loc-div-2 {
+    width: 50%;
+  }
+  .explore-box-loc-div-confirm {
+    height: 50px;
+  }
+  .explore-box-loc-div-3 {
+    align-items: flex-start;
+  }
+  .explore-buscador-filtrosActivos-top {
+    background-color: rgba(255, 255, 255, 1);
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .filter-sect-expl-top {
+    top: 120px;
+  }
+  .results-card-explore-top {
+    margin-top: 170px;
+  }
+  /*ubication selecto*/
+  .explore-box-location-wrp {
+    top: 90px;
+    right: 4%;
+  }
+  .explore-box-location-wrp-fixed {
+    top: 130px;
+    right: 4%;
+  }
+  .explore-box-loc-div-2 {
+    width: 100%;
+    margin-bottom: 27px;
+  }
+  .explore-box-loc-div-3 {
+    margin-bottom: 27px;
+  }
+  .explore-box-loc-div {
+    padding: 0.5rem;
+  }
+
+  .explore-box-loc-div-title {
+    margin: 0 0 1rem 10px;
+    font-size: 1rem;
+  }
+  .explore-box-loc-div-mun {
+    padding: 0.5rem;
+  }
+  .explore-box-loc-div-p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .flex-wrp-explore {
+    padding: 0;
+  }
+  .explore-buscador-filtrosActivos-top {
+    width: 1500px;
+  }
+  .explore-box-location-wrp {
+    right: 50%;
+    transform: translateX(70%);
+  }
+  .explore-box-location-wrp-fixed {
+    right: 50%;
+    transform: translateX(70%);
+  }
+}
+
+/*cambio width < 320, página se queda estática*/
+@media screen and (max-width: 320px) {
+  .wrapper-explore {
+    overflow-x: scroll;
+  }
+}
+
+/*hover effects*/
+@media (hover: hover) and (pointer: fine) {
+  .explore-box-loc-div-p:hover {
+    background-color: rgb(188, 221, 250);
+  }
+  .explore-box-loc-div-p:hover.active:hover {
+    background-color: #0d3b66;
+  }
+}

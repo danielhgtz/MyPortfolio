@@ -1,0 +1,35 @@
+.wrp-all-home-page{
+    overflow: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.wrp-all-home-page::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+.wrp-home-page{
+    width: 100%;
+    max-width: 1700px;
+    min-width: 320px !important;
+}
+.fondo-gradiente{
+    background: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+.browser-blur-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 997;
+    background: rgba( 255, 255, 255, 0.85 );
+    /*backdrop-filter: blur( 5px );*/
+    /*-webkit-backdrop-filter: blur( 5px );*/
+    display:inline-block;
+}
+
+@media screen and (max-width: 960px){
+    .wrp-all-home-page{
+        justify-content: left;
+    }
+}

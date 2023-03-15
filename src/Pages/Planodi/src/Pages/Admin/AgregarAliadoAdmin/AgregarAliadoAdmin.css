@@ -1,0 +1,29 @@
+.admin-add-ali-wrapper {
+    position: relative;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: column;
+}
+.admin-add-ali-wrapper::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+.admin-add-ali-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 1400px;
+    min-width: 320px;
+    width: 100%;
+    padding: 0 5%;
+}
+.admin-add-ali-title {
+    color: #3b3b3b;
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: 1.1rem;
+    margin-bottom: -1rem;
+}
+.admin-form-add-box{
+    border: solid #dadada 1px;
+    border-radius: 10px;
+}

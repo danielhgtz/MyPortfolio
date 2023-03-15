@@ -1,0 +1,48 @@
+.editar-vid-wrp-inputs{
+    display: flex;
+}
+.editar-vid-wrp-btn{
+    border-radius: 0 5px 5px 0;
+    border: none;
+    outline: none !important;
+    background: #3b3b3b;
+    color: white;
+    font-size: 1rem;
+    margin: 0 0 0 -0.7rem;
+    z-index: 100;
+    width: 160px;
+}
+.editar-vid-videos{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    gap: 20px;
+}
+.editar-vid-videos-section{
+    position: relative;
+    width: 200px;
+}
+.editar-vid-videos-section-cover{
+    background: rgba(40, 40, 40, 0.3);
+    position: absolute;
+    height: 150px;
+    width: 100%;
+}
+.editar-vid-videos-section-delete{
+    border-radius: 99px;
+    background: #c43838;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    color: white;
+    font-size: 1.2rem;
+    padding: 6px 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editar-vid-videos-section-delete:hover{
+    background: #cb4646;
+}

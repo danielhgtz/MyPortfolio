@@ -1,0 +1,84 @@
+.reviews-temp2-wrp{
+    width: 100%;
+    padding: 0 100px 0 100px;
+    max-width: 1450px;
+    min-width: 320px;
+}
+.reviews-temp2-wrp-title{
+    margin: 2rem 0 1rem 0.5rem;
+    font-size: 1.5rem;
+    color: #3b3b3b;
+}
+.reviews-temp2-wrp-button{
+    margin: 1.7rem 0 1rem 1rem !important;
+}
+.reviews-temp2-wrp-controller{
+    margin: 0 0 0.5rem 0.5rem;
+}
+.reviews-temp2-wrp-no-reviews{
+    width: 100%;
+    text-align: center;
+    color: #8f8f8f;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.reviews-temp2-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /*border: solid blue 1px;*/
+}
+.reviews-temp2-comment{
+    /*border: solid green 1px;*/
+    width: 49%;
+    margin: 0;
+    padding: 1rem;
+    opacity: 1;
+    transition: 0.7s;
+}
+.reviews-temp2-comment.loading{
+    opacity: 0;
+}
+    .reviews-temp2-comment-name{
+        margin: 0;
+        font-size: 0.9rem;
+        color: #3b3b3b;
+        font-weight: 500;
+    }
+    .reviews-temp2-comment-date{
+        margin: 0;
+        font-size: 0.8rem;
+        color: #3b3b3b;
+        font-weight: 300;
+    }
+    .reviews-temp2-comment-text{
+        margin: 10px 0 0 0;
+        font-size: 0.9rem;
+        color: #3b3b3b;
+        text-align: justify;
+    }
+
+/* Celular */
+@media screen and (max-width: 960px){
+    .reviews-temp2-wrp{
+        padding: 0 5% 0 5%;
+    }
+    .reviews-temp2-wrp-title{
+        margin: 2rem 0 1rem 0;
+        font-size: 1.3rem;
+    }
+    .reviews-temp2-wrp-button{
+        margin: 1.5rem 0 1rem 0.5rem !important;
+    }
+    .reviews-temp2-wrp-controller{
+        margin: 0 0 0.5rem 0;
+    }
+    .reviews-temp2-comment{
+        width: 100%;
+    }
+    .reviews-temp2-comment{
+        padding: 0.7rem 0.5rem;
+    }
+
+}

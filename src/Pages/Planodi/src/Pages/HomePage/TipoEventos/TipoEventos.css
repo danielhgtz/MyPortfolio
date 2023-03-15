@@ -1,0 +1,141 @@
+.tiposEv-wrapper{
+    display: flex;
+    width: 100%;
+    padding: 1rem 0;
+}
+.tiposEv-margins{
+    width: 2vw;
+}
+.tiposEv-gr-wr{
+    width: 96vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+
+.tiposEv-box1,.tiposEv-box2,.tiposEv-box3,.tiposEv-box4,.tiposEv-box5,.tiposEv-box6,.tiposEv-box7,.tiposEv-box8,.tiposEv-box9{
+    position: relative;
+    border-radius: 15px;
+    min-height: 15vh;
+    cursor: pointer;
+}
+.tiposEv-box1:hover,.tiposEv-box2:hover,.tiposEv-box3:hover,.tiposEv-box4:hover,.tiposEv-box5:hover,.tiposEv-box6:hover,.tiposEv-box7:hover,.tiposEv-box8:hover,.tiposEv-box9:hover{
+    opacity: 0.95;
+    transform: scale(1.01);
+}
+
+.tiposEv-box1{
+    background: url('../../../Assets/img/Imagenes_Evento_Iluminacion/Evento_Coorporativo_2.png'),linear-gradient(149deg, rgba(176,33,24,1) 23%, rgba(254,85,74,1) 54%, rgba(255,142,105,1) 85%);
+    background-repeat: no-repeat;
+    background-size: auto 130%;
+    background-position: 95% bottom;
+}
+.tiposEv-box2{
+    background: url('../../../Assets/img/Imagenes_Evento_Iluminacion/pool_party_2.png'), linear-gradient(149deg, rgba(208,48,0,1) 23%, rgba(241,95,51,1) 54%, rgba(255,147,100,1) 85%);
+    background-repeat: no-repeat;
+    background-size: auto 130%;
+    background-position: 95% bottom;
+}
+.tiposEv-box3{
+    background: url('../../../Assets/img/Imagenes_Evento_Iluminacion/Boda_2.png'), linear-gradient(149deg, rgba(5,112,153,1) 10%, rgba(13,157,223,1) 40%, rgba(22,237,254,1) 85%);
+    background-repeat: no-repeat;
+    background-size: auto 130%;
+    background-position: 95% bottom;
+}
+.tiposEv-box4{
+    background: url('../../../Assets/img/Imagenes_Evento_Iluminacion/Fiesta_Cumple_2.png'), linear-gradient(149deg, rgba(2,107,140,1) 25%, rgba(28,169,214,1) 54%, rgba(156,231,255,1) 85%);
+    background-repeat: no-repeat;
+    background-size: auto 130%;
+    background-position: 95% bottom;
+}
+.tiposEv-box5{
+    background: url('../../../Assets/img/Imagenes_Evento_Iluminacion/Fiesta_Infantil_2.png'), linear-gradient(149deg, rgb(7, 112, 145) 23%, rgba(19,139,177,1) 54%, rgba(56,200,241,1) 85%);
+    background-repeat: no-repeat;
+    background-size: auto 130%;
+    background-position: 95% bottom;
+}
+.tiposEv-box6{
+    background: url('../../../Assets/img/Imagenes_Evento/Bautizos.png'), linear-gradient(149deg, rgb(207, 89, 2) 23%, rgb(224, 109, 10) 54%, rgb(234, 150, 38) 85%);
+    background-repeat: no-repeat;
+    background-size: auto 130%;
+    background-position: 95% bottom;
+}
+.tiposEv-box7{
+    background: url('../../../Assets/img/Imagenes_Evento/XV.png'), linear-gradient(149deg, rgba(155,1,181,1) 23%, rgba(185,28,212,1) 54%, rgba(221,37,252,1) 85%);
+    background-repeat: no-repeat;
+    background-size: auto 130%;
+    background-position: 95% bottom;
+}
+.tiposEv-box8{
+    background: url('../../../Assets/img/Imagenes_Evento_Iluminacion/Baby_Shower_2.png'), linear-gradient(149deg, rgba(124,3,205,1) 23%, rgba(138,28,212,1) 54%, rgba(164,47,242,1) 85%);
+    background-repeat: no-repeat;
+    background-size: auto 130%;
+    background-position: 95% bottom;
+}
+.tiposEv-box9{
+    background: url('../../../Assets/img/Imagenes_Evento_Iluminacion/Rooftop_2.png'), linear-gradient(149deg, rgba(70,0,154,1) 23%, rgba(106,18,213,1) 54%, rgba(131,42,238,1) 85%);
+    background-repeat: no-repeat;
+    background-size: auto 130%;
+    background-position: 95% bottom;
+}
+.tiposEv-titulo{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #222222;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.tiposEv-tiposEv{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    width: 50%;
+}
+
+@media screen and (max-width: 884px){
+    .tiposEv-gr-wr{
+        width: 96vw;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,1fr);
+        grid-column-gap: 0.5rem;
+        grid-row-gap: 0.5rem;
+    }
+    .tiposEv-tiposEv{
+        font-size: 1rem;
+        width: 70%;
+    }
+    .tiposEv-box1,.tiposEv-box2,.tiposEv-box3,.tiposEv-box4,.tiposEv-box5,.tiposEv-box6,.tiposEv-box7,.tiposEv-box8,.tiposEv-box9{
+        background-size: auto 100%;
+        background-position: 98% bottom;
+    }
+    .tiposEv-titulo{
+        font-size: 1.5rem;
+    }
+    /*.tiposEv-box8 > .tiposEv-tiposEv{*/
+    /*    font-size: 0.8rem;*/
+    /*    width: 80%;*/
+    /*}*/
+    /*.tiposEv-box6 > .tiposEv-tiposEv{*/
+    /*    font-size: 0.8rem;*/
+    /*    width: 90%;*/
+    /*}*/
+    /*.tiposEv-box8,.tiposEv-box6{*/
+    /*    background-size: auto 100%;*/
+    /*    background-position: 500% bottom;*/
+    /*}*/
+    /*.tiposEv-box9{*/
+    /*    background-size: auto 100%;*/
+    /*    background-position: 400% bottom;*/
+    /*}*/
+}
+
+@media screen and (max-width: 357px){
+
+}

@@ -1,0 +1,42 @@
+.url-txt-instruc{
+    font-size: 1.5rem;
+    color: #3b3b3b;
+    font-weight: 500;
+    text-align: center;
+}
+.url-txt-instruc2{
+    text-align: center;
+    font-size: 1rem;
+}
+.url-precio-slider-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.url-precio-slider{
+    width: 300px;
+}
+.url-precio-slider-p{
+    color: #3b3b3b;
+    font-weight: 500;
+    margin: 0;
+    font-size: 1.5rem;
+}
+.url-precio-slider-p2{
+    color: #585858;
+    font-weight: 300;
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+/*----cambio a desktop*/
+@media screen and (min-width: 960px) {
+    .url-txt-instruc {
+        font-size: 2rem;
+        text-align: left;
+    }
+    .url-txt-instruc2{
+        text-align: left;
+    }
+}

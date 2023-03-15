@@ -1,0 +1,127 @@
+.temp2-sel-box-wrp{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 1.7rem 1.2rem;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    background-color: white;
+}
+.temp2-sel-box-wrp-fix{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 1.7rem 1.2rem;
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    top: 7px;
+    background-color: white;
+}
+.temp2-sel-box-wrp-instruction{
+    margin: 0 0 15px 0;
+    font-size: 0.7rem;
+    color: #b3b3b3;
+    text-transform: uppercase;
+}
+.temp2-sel-box-wrp-p-1{
+    font-size: 0.9rem;
+    margin: 2px 0 0 0;
+    color: #3b3b3b;
+}
+.temp2-sel-box-wrp-name{
+    font-size: 1rem;
+    margin: 1rem 0 0 0;
+    text-align: left;
+    padding: 5px 0 10px 0;
+    color: #3b3b3b;
+}
+.temp2-sel-box-wrp-desc{
+    font-size: 0.8rem;
+    text-align: justify;
+    height: 45px;
+    margin: 0 0 10px 0;
+}
+.temp2-sel-box-wrp-images{
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-decoration: underline;
+    text-align: center;
+    color: #757575;
+}
+.temp2-sel-box-wrp-images:hover{
+    color: #484848;
+}
+.temp2-sel-box-wrp-slide{
+    height: 2px;
+    width: 60px;
+    border-radius: 99px;
+    background-color: #8c8c8c;
+    margin-bottom: 5px;
+}
+.temp2-sel-box-buttn-mobile{
+    width: 50%;
+    margin-top: 12px;
+    padding: 0 0 0 10px;
+}
+.temp2-sel-box-redes-s-wrp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #3b3b3b;
+    margin-bottom: 5px;
+    height: 1.5rem;
+}
+    .temp2-sel-box-redes-s-wrp-icon{
+        margin: 0 10px;
+        cursor: pointer;
+    }
+
+/* Celular */
+@media screen and (max-width: 960px){
+    .temp2-sel-box-wrp{
+        margin: 0;
+        padding: 12px 10px 5px 10px;
+        border: none;
+        border-radius: 10px 10px 0 0;
+        flex-direction: row;
+        justify-content: space-between;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        flex-wrap: wrap;
+    }
+    .temp2-sel-box-wrp-instruction{
+        font-size: 0.52rem;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .temp2-sel-box-wrp-price{
+        font-weight: 500;
+        font-size: 1.1rem;
+        white-space: nowrap;
+    }
+    .temp2-sel-box-wrp-name{
+        font-size: 0.8rem;
+        padding: 0 0 0 8px;
+        display: inline;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .temp2-sel-box-wrp-p-1{
+        font-size: 0.8rem;
+        margin: 2px 0 0 0;
+        color: #3b3b3b;
+        font-weight: 300;
+    }
+}
+
+/*hover effects*/
+@media (hover: hover) and (pointer: fine){
+    .temp2-sel-box-redes-s-wrp-icon:hover{
+        opacity: 0.9;
+    }
+}

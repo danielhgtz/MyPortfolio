@@ -1,0 +1,166 @@
+.cardGen-links{
+    text-decoration: none;
+    color: #3b3b3b;
+}
+.cardGen-links:hover{
+    text-decoration: none;
+    color: #3b3b3b;
+}
+.card-wrapper{
+    position: relative;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: transparent;
+    overflow: hidden;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-media{
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    position: relative;
+}
+.card-info{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: #FFFFFF;
+}
+
+/* fin de secciones*/
+
+.card-change-image{
+    position: absolute;
+    top: 93%;
+    z-index: 100;
+    transform: translate(-50%,-50%);
+    min-height: 5px;
+    width: 10%;
+    border: solid white 1px;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 2px;
+    cursor: pointer;
+}
+.imgs-card-gen-izq{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.7);
+    font-size: 1.4rem;
+    color: #3b3b3b;
+    border-radius: 99px;
+    padding: 0.3rem 0.32rem 0.3rem 0.3rem;
+}
+.imgs-card-gen-der{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.7);
+    font-size: 1.4rem;
+    color: #3b3b3b;
+    border-radius: 99px;
+    padding: 0.3rem 0.32rem 0.3rem 0.3rem;
+}
+.card-logo{
+    height: 36px;
+    width: 36px;
+    /*border: solid blue 1px;*/
+    border-radius: 99px;
+    margin: 0 0 0 3px;
+    position: absolute;
+    left: 2px;
+    top: 3px;
+    -webkit-box-shadow: 0 0 14px -10px rgba(0,0,0,0.9);
+    box-shadow: 0 0 14px -10px rgba(0,0,0,0.9);
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+.card-titulo{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 5px 0;
+    /*height: 49px;*/
+    /*border: solid green 1px;*/
+}
+
+.card-precio{
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3b3b3b;
+}
+.card-descripcion{
+    font-size: 13px;
+    margin: 0 0 5px 0;
+    color: #94948c;
+    font-weight: 300;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 40px;
+}
+
+.card-boton{
+    position: absolute;
+    right: 0 !important;
+    width: 100%;
+    font-size: 12px !important;
+    text-transform: none !important;
+}
+
+.card-boton:focus{
+    outline: none;
+}
+
+.ver-mas-card-general{
+    width: 100%;
+    height: 100%;
+    background: rgba(53,53,53,0.44);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+/*hover effects*/
+@media (hover: hover) and (pointer: fine) {
+    .cardGen-links:hover{
+        text-decoration: none;
+        color: #3b3b3b;
+    }
+    .card-wrapper:hover .card-info{
+        background-color: rgb(245, 245, 245);
+    }
+
+    .card-wrapper:hover .imgs-card-gen-izq{
+        opacity: 1;
+    }
+    .card-wrapper:hover .imgs-card-gen-der{
+        opacity: 1;
+    }
+    .imgs-card-gen-der:hover, .imgs-card-gen-izq:hover{
+        font-size: 1.5rem;
+        transition: 0.1s;
+        background-color: rgba(255,255,255,0.9);
+    }
+}

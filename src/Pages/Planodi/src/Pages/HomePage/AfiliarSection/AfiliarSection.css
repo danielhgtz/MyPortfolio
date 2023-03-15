@@ -1,0 +1,119 @@
+.afiliar-section-wrp{
+    width: 100%;
+    margin-top: 7rem;
+    display: flex;
+    justify-content: center;
+}
+.afiliar-section-wrp-div{
+    width: 90%;
+    position: relative;
+    height: 500px;
+    border-radius: 20px;
+    background: url('../../../Assets/img/homepage/fondo_afiliar.webp');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    .afiliar-section-bg-img{
+        width: 100%;
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        user-drag: none;
+    }
+    .afiliar-section-title{
+        font-size: 3.4rem;
+        color: white;
+        position: absolute;
+        top: 3rem;
+        left: 5rem;
+        font-weight: 600;
+    }
+    .afiliar-section-subtitle{
+        font-size: 1.2rem;
+        color: white;
+        position: absolute;
+        top: 10rem;
+        left: 5rem;
+        width: 500px;
+    }
+    .afiliar-section-btn{
+        position: absolute !important;
+        top: 17rem;
+        left: 5rem;
+    }
+
+/* Celular */
+@media screen and (max-width: 960px){
+    .afiliar-section-wrp{
+        margin-top: 1rem;
+    }
+    .afiliar-section-wrp-div{
+        width: 100%;
+        position: relative;
+        height: 450px;
+        border-radius: 0;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .afiliar-section-title{
+        font-size: 3rem;
+        color: white;
+        position: absolute;
+        top: 3rem;
+        left: 2rem;
+        font-weight: 600;
+    }
+    .afiliar-section-subtitle{
+        font-size: 1rem;
+        color: white;
+        position: absolute;
+        top: 10rem;
+        left: 2rem;
+        width: 500px;
+    }
+    .afiliar-section-btn{
+        position: absolute !important;
+        top: 17rem;
+        left: 2rem;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .afiliar-section-wrp-div{
+        height: 400px;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .afiliar-section-title{
+        font-size: 1.9rem;
+        color: white;
+        position: absolute;
+        top: 3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+    }
+    .afiliar-section-subtitle{
+        font-size: 0.85rem;
+        color: white;
+        position: absolute;
+        top: 9rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 300px;
+        text-align: center;
+    }
+    .afiliar-section-btn{
+        position: absolute !important;
+        top: 15rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.8rem !important;
+    }
+}

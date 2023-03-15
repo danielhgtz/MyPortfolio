@@ -1,0 +1,272 @@
+/* SECCIÓN IMAGENES */
+.card-exp-wrapper{
+    display: flex;
+    align-items: stretch;
+    margin: 2% 2% 0 2%;
+    max-width: 1000px;
+}
+.double-column-exp{
+    width: 46%;
+}
+
+.imagenes-card-exp{
+    border-radius: 8px;
+    width: 500px;
+    height: 230px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imgs-card-exp-hoverDiv{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.imgs-card-exp-hoverDiv:hover{
+    display: block;
+    opacity: 1;
+    transition: 0.2s;
+}
+.imgs-card-exp-izq{
+    position: absolute;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.7);
+    font-size: 1.7rem;
+    color: #3b3b3b;
+    border-radius: 99px;
+    padding: 0.3rem 0.32rem 0.3rem 0.3rem;
+}
+.imgs-card-exp-izq:hover{
+    font-size: 1.8rem;
+    padding: 0.4rem 0.42rem 0.4rem 0.4rem;
+    background-color: rgba(255,255,255,0.9);
+    transition: 0.5s;
+}
+.imgs-card-exp-der{
+    position: absolute;
+    top: 50%;
+    right: 2px;
+    transform: translateY(-50%);
+    background-color: rgba(255,255,255,0.7);
+    font-size: 1.7rem;
+    color: #3b3b3b;
+    border-radius: 99px;
+    padding: 0.3rem 0.32rem 0.3rem 0.3rem;
+}
+.imgs-card-exp-der:hover{
+    font-size: 1.8rem;
+    padding: 0.4rem 0.42rem 0.4rem 0.4rem;
+    background-color: rgba(255,255,255,0.9);
+    transition: 0.5s;
+}
+
+/* SECCIÓN INFORMACION */
+.info-wrp-card-exp{
+    width: 100%;
+    padding: 1rem;
+    user-select: none; /* standard syntax */
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+    cursor: pointer;
+    position: relative;
+}
+
+.card-exp-wrapper:hover .imgs-card-exp-hoverDiv{
+    display: block;
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.card-exp-titulo-wrp{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+    .card-exp-titulo{
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: #3b3b3b;
+        margin: 0;
+    }
+    .card-exp-logo{
+        height: 2.4rem;
+        width: 2.4rem;
+        border-radius: 99px;
+        -webkit-box-shadow: 0 0 14px -7px rgba(0,0,0,0.2);
+        box-shadow: 0 0 14px -7px rgba(0,0,0,0.2);
+        margin: 5px 8px 5px 5px;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center center !important;
+    }
+
+.card-exp-content{
+    font-size: 0.9rem;
+    color: #94948c;
+    font-weight: 300;
+    margin: 0;
+}
+.card-exp-content-2{
+    font-size: 0.9rem;
+    color: #94948c;
+    font-weight: 300;
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    height: 1.4rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-exp-descripcion{
+    /*display: -webkit-box;*/
+    /*-webkit-line-clamp: 3;*/
+    /*-webkit-box-orient: vertical;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
+    word-break: break-all;
+    white-space: normal;
+    max-height: 65px;
+    font-size: 0.9rem;
+    color: #94948c;
+    font-weight: 300;
+    text-align: justify;
+}
+.card-exp-precio{
+    text-align: right;
+}
+.wrp-card-exp-estrellas-precio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.card-exp-resena-estrella{
+    font-size: 0.87rem;
+    color: #3b3b3b;
+}
+.card-exp-reviews{
+    color: #94948c;
+}
+
+/* DOTS */
+.card-exp-img-dots{
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.6);
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    /*border: salmon solid 1px;*/
+}
+.cardexp-dot-imgs-dot{
+    font-size: 0.6rem !important;
+}
+.cardexp-dot-imgs-dot.active{
+    color: rgba(255, 255, 255, 1);
+}
+
+/* CARDS PEQUEÑAS DOBLE COLUMNA */
+.wrp-card-exp-estrellas-precio-double-column{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-top: 0;
+}
+.card-exp-precio-double-column{
+    text-align: left;
+    margin: 0;
+}
+.card-exp-resena-estrella-double-column{
+    font-size: 0.87rem;
+    color: #3b3b3b;
+    margin: 0.6rem 0 0 0;
+}
+/*FIN*/
+
+@media screen and (max-width: 1110px){
+    .wrp-card-exp-estrellas-precio{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: stretch;
+        margin-top: 0;
+    }
+    .card-exp-precio{
+        text-align: left;
+        margin: 0;
+    }
+    .card-exp-resena-estrella{
+        font-size: 0.87rem;
+        color: #3b3b3b;
+        margin: 0.6rem 0 0 0;
+    }
+}
+/* Celular */
+@media screen and (max-width: 960px){
+    /* SECCIÓN IMAGENES */
+    .card-exp-wrapper{
+        display: flex;
+        align-items: stretch;
+        margin: 1rem 0;
+        max-width: 1000px;
+        flex-direction: column;
+    }
+    .imagenes-card-exp{
+        border-radius: 15px;
+        width: 100%;
+        height: 250px;
+    }
+
+    /* SECCIÓN INFORMACION */
+    .info-wrp-card-exp{
+        width: 100%;
+        padding: 0.2rem 0;
+    }
+    .card-exp-titulo-wrp{
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .card-exp-titulo{
+        font-size: 1rem;
+    }
+    .card-exp-descripcion{
+        /*display: -webkit-box;*/
+        /*-webkit-line-clamp: 2;*/
+        /*-webkit-box-orient: vertical;*/
+        font-size: 0.7rem;
+        margin: 0 0 0.3rem 0;
+    }
+    .card-exp-content{
+        font-size: 0.7rem;
+    }
+    .card-exp-content-2{
+        font-size: 0.7rem;
+        height: 1.1rem;
+    }
+    .card-exp-precio{
+        text-align: left;
+        margin: 0;
+        font-size: 0.8rem;
+    }
+    .card-exp-resena-estrella{
+        color: #3b3b3b;
+        margin: 0.1rem 0 0 0;
+        font-size: 0.7rem;
+    }
+    .imgs-card-exp-hoverDiv{
+        opacity: 1;
+    }
+}

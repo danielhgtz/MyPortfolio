@@ -1,0 +1,72 @@
+.modal-new-review-wrp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+.modal-new-review-input{
+    width: 100%;
+}
+.modal-new-review-title{
+    margin: 1rem 0 1rem 0;
+}
+.modal-new-review-stars-flex{
+    display: flex;
+    justify-content: flex-start;
+}
+.modal-new-review-star-input{
+    color: #8c50ff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin: 0 0.6rem 0 0;
+}
+.modal-new-review-star-input-active{
+    color: #8c50ff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin: 0 0.6rem 0 0;
+}
+.modal-new-review-star-input-errorMsg{
+    font-family: Roboto, sans-serif;
+    color: #f13837;
+    font-size: 0.8rem;
+    margin: 1rem 0 0 1.2rem;
+}
+.modal-new-review-star-rating-text-wrp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-new-review-star-rating-text-p{
+    margin-left: 1rem;
+    color: #646464;
+}
+
+.modal-new-review-star-input-disclaimer{
+    cursor: pointer;
+    text-align: justify;
+    font-size: 0.7rem;
+}
+
+/* Celular */
+@media screen and (max-width: 960px){
+    .modal-new-review-stars-flex{
+        flex-wrap: wrap;
+    }
+    .modal-new-review-star-input{
+        font-size: 2.1rem;
+        margin: 0 0.6rem 0 0;
+    }
+    .modal-new-review-star-input-active{
+        font-size: 2.1rem;
+        margin: 0 0.6rem 0 0;
+    }
+    .modal-new-review-star-rating-text-wrp{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .modal-new-review-star-rating-text-p{
+        margin: 1rem 0 0 0.2rem;
+        color: #646464;
+    }
+}

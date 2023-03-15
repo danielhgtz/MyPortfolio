@@ -1,0 +1,135 @@
+.afil-cat-box{
+    padding: 1rem 0.5rem;
+    border: solid #ececec 1px;
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;
+    min-height: 9.5rem;
+    width: 12.7vw;
+    margin: 0.5rem;
+}
+.afil-cat-box:hover{
+    transform: scale(1.005);
+    -webkit-box-shadow: 0 0 7px 2px rgba(0,0,0,0.13);
+    box-shadow: 0 0 7px 2px rgba(0,0,0,0.13);
+}
+.afil-cat-box.select{
+    border: solid 4px #8c50ff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.afil-cat-box-text{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    color: #3b3b3b;
+}
+
+
+.afil-cat-box-cumple{
+    background: url('../../../../Assets/img/Imagenes_Evento_Iluminacion/Fiesta_Cumple_2.png');
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: center bottom;
+}
+.afil-cat-box-FI{
+    background: url('../../../../Assets/img/Imagenes_Evento_Iluminacion/Fiesta_Infantil_2.png');
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: center bottom;
+}
+.afil-cat-box-boda{
+    background: url('../../../../Assets/img/Imagenes_Evento_Iluminacion/Boda_2.png');
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: center bottom;
+}
+.afil-cat-box-corp{
+    background: url('../../../../Assets/img/Imagenes_Evento_Iluminacion/Evento_Coorporativo_2.png');
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: center bottom;
+}
+.afil-cat-box-baut{
+    background: url('../../../../Assets/img/Imagenes_Evento/Bautizos.png');
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: center bottom;
+}
+.afil-cat-box-xv{
+    background: url('../../../../Assets/img/Imagenes_Evento/XV.png');
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: center bottom;
+}
+.afil-cat-box-baby{
+    background: url('../../../../Assets/img/Imagenes_Evento_Iluminacion/Baby_Shower_2.png');
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: center bottom;
+}
+.afil-cat-box-RT{
+    background: url('../../../../Assets/img/Imagenes_Evento_Iluminacion/Rooftop_2.png');
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: center bottom;
+}
+.afil-cat-box-pool{
+    background: url('../../../../Assets/img/Imagenes_Evento_Iluminacion/pool_party_2.png');
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: center bottom;
+}
+
+
+
+.afil-cat-wrapper{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+}
+
+@media screen and (max-width: 1170px){
+    .afil-cat-box{
+        width: 18vw;
+    }
+    .afil-cat-box-cumple{
+        background-size: auto 80%;
+    }
+    .afil-cat-box-FI{
+        background-size: auto 80%;
+    }
+    .afil-cat-box-boda{
+        background-size: auto 80%;
+    }
+    .afil-cat-box-corp{
+        background-size: auto 80%;
+    }
+    .afil-cat-box-baut{
+        background-size: auto 80%;
+    }
+    .afil-cat-box-xv{
+        background-size: auto 80%;
+    }
+    .afil-cat-box-baby{
+        background-size: auto 80%;
+    }
+    .afil-cat-box-RT{
+        background-size: auto 80%;
+    }
+    .afil-cat-box-pool{
+        background-size: auto 80%;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .afil-cat-box{
+        width: 38vw;
+    }
+}
+
+@media screen and (max-width: 423px){
+    .afil-cat-box{
+        min-width: 200px;
+    }
+}
