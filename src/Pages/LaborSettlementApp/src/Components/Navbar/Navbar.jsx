@@ -6,7 +6,6 @@ import "./Navbar.css";
 export const NavBar = () => {
   const navigate = useNavigate();
   const { isLogged, setIsLogged } = useIsLogged();
-  console.log(isLogged);
 
   const navigateHome = () => {
     navigate("../", { replace: true });
@@ -26,26 +25,10 @@ export const NavBar = () => {
   };
 
   return (
-    <nav>
-      <a onClick={navigateHome} className="siteTitle">
+    <div className="navLSA">
+      <div onClick={navigateHome} className="siteTitle">
         Home
-      </a>
-      {isLogged ? (
-        <ul>
-          <li className="active">
-            <a onClick={logout}>Logout</a>
-          </li>
-        </ul>
-      ) : (
-        <ul>
-          <li className="active">
-            <a onClick={navigateToRegister}>Register</a>
-          </li>
-          <li className="active">
-            <a onClick={navigateToLogin}>Login</a>
-          </li>
-        </ul>
-      )}
-    </nav>
+      </div>
+    </div>
   );
 };

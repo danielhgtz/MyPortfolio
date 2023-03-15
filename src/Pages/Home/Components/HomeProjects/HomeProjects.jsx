@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./HomeProjects.css";
 import { AdministrationPallets } from "./Projects/AdministrationPallets";
 import { LaborSettlementProject } from "./Projects/LaborSettlement";

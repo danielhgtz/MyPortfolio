@@ -18,20 +18,19 @@ import { NavBar } from "../../Components/Navbar/Navbar";
 import { useNavigate } from "react-router-dom";
 
 const LaborSettlementCalculator = () => {
-  const { isLogged } = useIsLogged();
-  const navigate = useNavigate();
+  // const { isLogged } = useIsLogged();
+  // const navigate = useNavigate();
 
-  useEffect(() => {
-    if (isLogged === false) {
-      navigate("../", { replace: true });
-    } else {
-      console.log("loggeado");
-    }
-  }, [isLogged]);
+  // useEffect(() => {
+  //   if (isLogged === false) {
+  //     navigate("../", { replace: true });
+  //   } else {
+  //     console.log("loggeado");
+  //   }
+  // }, [isLogged]);
 
   return (
     <div>
-      <h1 style={{ color: "white" }}>PRUEBAAA</h1>
       <NavBar />
       <StepperContextProvider>
         <PrimeraFechaContextProvider>

@@ -16,19 +16,21 @@ const Home = () => {
   const homeProjectsRef = useRef(null);
 
   return (
-    <div className="container">
-      <ParticlesBackground />
-      <HomeMain />
-      <HomeIntroductionText homeAboutRef={homeAboutRef} />
-      <HomeSkills homeSkillsRef={homeSkillsRef} />
-      <HomeTools />
-      <HomeProjects homeProjectsRef={homeProjectsRef} />
-      <Footer />
-      <Navbar
-        homeAboutRef={homeAboutRef}
-        homeSkillsRef={homeSkillsRef}
-        homeProjectsRef={homeProjectsRef}
-      />
+    <div className="blackBackground">
+      <div className="container ">
+        <ParticlesBackground />
+        <HomeMain />
+        <HomeIntroductionText homeAboutRef={homeAboutRef} />
+        <HomeSkills homeSkillsRef={homeSkillsRef} />
+        <HomeTools />
+        <HomeProjects homeProjectsRef={homeProjectsRef} />
+        <Footer />
+        <Navbar
+          homeAboutRef={homeAboutRef}
+          homeSkillsRef={homeSkillsRef}
+          homeProjectsRef={homeProjectsRef}
+        />
+      </div>
     </div>
   );
 };

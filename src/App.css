@@ -1,9 +1,14 @@
 body {
-  background-color: black;
   display: grid;
   font-family: "Poppins", sans-serif;
   font-size: 27px;
   font-weight: 700;
   height: 100vh;
   place-items: center;
+  margin: 0;
+  background: linear-gradient(90deg, #f8d5c6, #2e537c);
 }
+
+/* .black {
+  background-color: black;
+} */

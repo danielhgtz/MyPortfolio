@@ -12,7 +12,7 @@ export const ProjectComponent = ({
   technologies,
   gitHubLink,
   booleanDemo,
-  demoLink,
+  demoLinkFx,
 }) => {
   return (
     <div className="HPInnerDiv">
@@ -34,7 +34,7 @@ export const ProjectComponent = ({
               Github
             </Button>
             {booleanDemo ? (
-              <Button className="glowingColorButton" href={demoLink}>
+              <Button className="glowingColorButton" onClick={demoLinkFx}>
                 <StartVector /> Demo
               </Button>
             ) : null}
