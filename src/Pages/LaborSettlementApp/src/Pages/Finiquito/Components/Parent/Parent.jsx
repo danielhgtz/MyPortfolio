@@ -59,7 +59,7 @@ const ParentFiniquito = () => {
   const diasTrabajadosUltimoAño = DiasTrabajadosUltimoAñoFuncion();
 
   return (
-    <div className="black">
+    <div>
       <h1 className="mainTitle">Cálculo de Liquidación </h1>
       <div className="StepperBox">
         <Stepper />

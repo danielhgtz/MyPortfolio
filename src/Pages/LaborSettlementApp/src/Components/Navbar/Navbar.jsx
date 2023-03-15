@@ -11,22 +11,9 @@ export const NavBar = () => {
     navigate("../", { replace: true });
   };
 
-  const navigateToRegister = () => {
-    navigate("../Register", { replace: true });
-  };
-
-  const navigateToLogin = () => {
-    navigate("../Login", { replace: true });
-  };
-
-  const logout = () => {
-    setIsLogged(false);
-    navigate("../", { replace: true });
-  };
-
   return (
     <div className="navLSA">
-      <div onClick={navigateHome} className="siteTitle">
+      <div onClick={navigateHome} className="LSANavHomeTitle">
         Home
       </div>
     </div>

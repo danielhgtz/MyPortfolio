@@ -1,6 +1,9 @@
 .container {
   margin-left: 25px;
   margin-right: 25px;
+  font-family: "Poppins", sans-serif;
+  font-size: 27px;
+  font-weight: 700;
 }
 
 .blackBackground {

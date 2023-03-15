@@ -29,7 +29,9 @@ export const PrimaDeAntiguedadResults = ({ años, meses, dias }) => {
   }
 
   useEffect(() => {
-    setTotalDineroPrima(totalDiasPrima * SCDTopado);
+    if (años >= 15) {
+      setTotalDineroPrima(totalDiasPrima * SCDTopado);
+    }
 
     if (años >= 15) {
       setPrimaDeAntiguedadBoolean(true);

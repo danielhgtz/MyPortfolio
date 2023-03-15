@@ -27,8 +27,11 @@ const ResumePDF = () => {
   };
 
   return (
-    <div style={{ paddingTop: "55px" }}>
-      <Document file="/PDFResume/ResumeDanielGutierrezENG.pdf">
+    <div>
+      <Document
+        className="pdfContainer"
+        file="/PDFResume/ResumeDanielGutierrezENG.pdf"
+      >
         <Page
           pageNumber={1}
           renderTextLayer={false}

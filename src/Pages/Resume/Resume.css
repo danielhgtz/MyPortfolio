@@ -1,3 +1,9 @@
+.pdfContainer {
+  padding-top: 55px;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+}
 .navResumePDF {
   display: flex;
   margin: auto;
@@ -27,6 +33,9 @@
 .navbarNamePDF {
   color: white;
   font-family: "Caveat", cursive;
+
+  font-size: 27px;
+  font-weight: 700;
   cursor: pointer;
   margin: 0px;
   background: rgba(100, 200, 200, 0);

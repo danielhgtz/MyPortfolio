@@ -1,9 +1,3 @@
-.siteTitle {
-  color: white;
-  font-size: 25px;
-  cursor: pointer;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -16,18 +10,31 @@
   color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  align-items: stretch;
   position: fixed;
   z-index: 3;
-
-  margin: auto;
-
   padding-right: 0px;
   padding-left: 0px;
   right: 0px;
   left: 0px;
+}
+
+.LSANavHomeTitle {
+  color: white;
+
   cursor: pointer;
+  margin-left: 70px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.LSANavHomeTitle:hover {
+  background-color: rgba(0, 0, 0, 0.211);
+  border-radius: 10%;
 }
 
 /*
@@ -53,7 +60,4 @@ nav li.active {
   font-size: 20px;
   cursor: pointer;
 }
-
-nav li:hover {
-  background-color: rgba(0, 0, 0, 0.211);
-} */
+*/

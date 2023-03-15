@@ -11,12 +11,13 @@ import { Total } from "../../../Total/Total";
 import "./CompilerResult.css";
 
 //!
-// import calendar from "../../../../../../Assets/img/calendar.png";
-// import money from "../../../../../../Assets/img/money.png";
-// import vacations from "../../../../../../Assets/img/vacaciones.png";
-// import aguinaldo from "../../../../../../Assets/img/aguinaldo.png";
-// import antiguedad from "../../../../../../Assets/img/antiguedad.png";
-// import ahorro from "../../../../../../Assets/img/ahorro.png";
+// import calendar from "../../../../../../../../../Assets/img/calendar.png";
+import calendar from "../../../../../../../../../Assets/img/calendar.png";
+import money from "../../../../../../../../../Assets/img/money.png";
+import vacations from "../../../../../../../../../Assets/img/vacaciones.png";
+import aguinaldo from "../../../../../../../../../Assets/img/aguinaldo.png";
+import antiguedad from "../../../../../../../../../Assets/img/antiguedad.png";
+import ahorro from "../../../../../../../../../Assets/img/ahorro.png";
 
 import React from "react";
 
@@ -40,11 +41,11 @@ export const CompilerResults = ({
         <Total />
       </div> */}
 
-      <div className="container">
+      <div className="CRContainer">
         <div className="colum">
           <div className="column1">
             <div className="containerInnerDiv">
-              <img className="image" src={"null"} />
+              <img className="image" src={calendar} />
               <div className="titleDiv">
                 <p className="title">Duración de la Relación Laboral</p>
 
@@ -59,7 +60,7 @@ export const CompilerResults = ({
             </div>
 
             <div className="containerInnerDiv">
-              <img className="image" src={"null"} />
+              <img className="image" src={money} />
               <div className="titleDiv">
                 <p className="title">Salario </p>
 
@@ -79,7 +80,7 @@ export const CompilerResults = ({
             </div>
 
             <div className="containerInnerDiv">
-              <img className="image" src={"null"} />
+              <img className="image" src={vacations} />
               <div className="titleDiv">
                 <p className="title">Vacaciones</p>
 
@@ -95,7 +96,7 @@ export const CompilerResults = ({
           </div>
           <div className="column2">
             <div className="containerInnerDiv">
-              <img className="image" src={"null"} />
+              <img className="image" src={aguinaldo} />
               <div className="titleDiv">
                 <p className="title">Aguinaldo</p>
 
@@ -108,7 +109,7 @@ export const CompilerResults = ({
               </div>
             </div>
             <div className="containerInnerDiv">
-              <img className="image" src={"null"} />
+              <img className="image" src={antiguedad} />
               <div className="titleDiv">
                 <p className="title">Prima de Antiguedad</p>
 
@@ -123,7 +124,7 @@ export const CompilerResults = ({
             </div>
 
             <div className="containerInnerDiv">
-              <img className="image" src={"null"} />
+              <img className="image" src={ahorro} />
               <div className="titleDiv">
                 <p className="title">Fondo de Ahorro</p>
 

@@ -8,12 +8,16 @@ export const InputSalarioFinalComponent = ({ ultimoDiaPorMes }) => {
     <div>
       <div className="salarioFinalDiv">
         <div className="firstBoxModalidadDePago">
+          <p className="firstdBoxTitle">Forma de Pago: </p>
           <ModalidadDePagoComponent ultimoDiaPorMes={ultimoDiaPorMes} />
-          <p>*Ingresa la forma en la que te pagan tu salario</p>
+          <p className="firstBoxText">
+            *Ingresa la forma en la que te pagan tu salario
+          </p>
         </div>
-        <div className="secondtBoxModalidadDePago">
+        <div className="secondBoxModalidadDePago">
+          <p className="secondBoxTitle">Salario Mensual: </p>
           <InputSalario ultimoDiaPorMes={ultimoDiaPorMes} />
-          <p>
+          <p className="secondBoxText">
             *Ingresa cuánto ganas al Mes antes de Impuestos y Fondo de Ahorro.
           </p>
         </div>

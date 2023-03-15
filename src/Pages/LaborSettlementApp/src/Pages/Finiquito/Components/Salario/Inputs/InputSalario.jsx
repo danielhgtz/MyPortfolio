@@ -18,7 +18,6 @@ export const InputSalario = ({ ultimoDiaPorMes }) => {
 
   return (
     <div>
-      <p>Salario Mensual: </p>
       <InputNumber
         prefix="$"
         style={{ width: "100%" }}

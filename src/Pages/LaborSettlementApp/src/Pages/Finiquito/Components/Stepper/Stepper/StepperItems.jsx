@@ -11,7 +11,7 @@ export const StepperItems = () => {
       title: "Aguinaldo",
     },
     { title: "Fondo de Ahorro" },
-    { title: "Prestaciones Extras" },
+    { title: "Extras" },
     { title: "Resultados: " },
   ];
 
