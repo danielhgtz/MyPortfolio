@@ -16,7 +16,7 @@ export const HomeSkills = ({ homeSkillsRef }) => {
   return (
     <div ref={homeSkillsRef} className="mainDivSkills">
       <h1>Professional Skills:</h1>
-      <div className="row">
+      <div className="HSTRow">
         <div className="div1">
           <div className="innerDiv">
             <ReactVector className="vector80px" />

@@ -10,7 +10,7 @@
   padding-bottom: 50px;
 }
 
-.row {
+.HSTRow {
   display: flex;
   justify-content: center;
   margin: auto;

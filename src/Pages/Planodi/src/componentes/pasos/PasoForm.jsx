@@ -1,5 +1,5 @@
 import React from "react";
-import { fade } from "@material-ui/core";
+import { alpha } from "@material-ui/core";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 
 import "./PasoForm.css";
@@ -54,7 +54,7 @@ export const botonesAtrasYAdelante = makeStyles(() => ({
     textTransform: "none",
     padding: "12px 24px",
     "&:hover": {
-      backgroundColor: fade("#face39", 0.2),
+      backgroundColor: alpha("#face39", 0.2),
     },
     "&:focus": {
       outline: "none",

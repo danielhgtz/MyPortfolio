@@ -1,7 +1,7 @@
 import React, { useEffect, useState, Suspense, lazy } from "react";
 import axios from "axios";
 import { useNavigate, useLocation } from "react-router-dom";
-import { fade, Grid } from "@material-ui/core";
+import { alpha, Grid } from "@material-ui/core";
 
 import Navbar, { useAuthModals } from "./Navbar/Navbar";
 import BuscadorInicio from "./BuscadorInicio/BuscadorInicio";
@@ -31,10 +31,10 @@ const useStyles = makeStyles(() => ({
     width: "30%",
     borderRadius: "5px",
     padding: "8px",
-    backgroundColor: fade("#3b3b3b", 0.95),
+    backgroundColor: alpha("#3b3b3b", 0.95),
     color: "#FFFFFF",
     "&:hover": {
-      backgroundColor: fade("#3b3b3b", 0.8),
+      backgroundColor: alpha("#3b3b3b", 0.8),
       color: "#FFFFFF",
     },
     "&:focus": {
@@ -215,11 +215,7 @@ export default function HomePage() {
           >
             <Button
               className={`afiliar-section-color-box-btn ${classes.buttonAfil}`}
-              href={`${
-                process.env.REACT_APP_ENV === "development"
-                  ? process.env.REACT_APP_LINK_FE_LOCAL
-                  : process.env.REACT_APP_LINK_FE_PROD
-              }buscador`}
+              href={"/Planodi/buscador"}
               style={mobile ? { width: "80%" } : { width: "30%" }}
             >
               Ver catálogo completo

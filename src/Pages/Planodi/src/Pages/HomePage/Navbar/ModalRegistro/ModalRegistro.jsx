@@ -13,7 +13,7 @@ import makeStyles from "@material-ui/core/styles/makeStyles";
 import { useDispatch } from "react-redux";
 import moment from "moment";
 import axios from "axios";
-import { fade } from "@material-ui/core";
+import { alpha } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
 import MyTextField from "../../../../componentes/formikInputs/MyTextField/MyTextField";
 import MyDateSelect from "../../../../componentes/formikInputs/MyDateSelect/MyDateSelect";
@@ -39,7 +39,7 @@ const useStyles = makeStyles(() => ({
     transition: "0.2s",
     padding: "0.5rem 3rem",
     "&:hover": {
-      backgroundColor: fade("#8c50ff", 0.9),
+      backgroundColor: alpha("#8c50ff", 0.9),
     },
     "&:focus": {
       outline: "none",
@@ -108,11 +108,13 @@ export default function ModalRegistro({
       ),
     contrasena2: yup
       .string()
-      .test("passwords-match", "Las contraseñas no coinciden", function (
-        value
-      ) {
-        return this.parent.contrasena === value;
-      }),
+      .test(
+        "passwords-match",
+        "Las contraseñas no coinciden",
+        function (value) {
+          return this.parent.contrasena === value;
+        }
+      ),
     // sexo: yup
     //   .number()
     //   .min(0, "Selecciona una opción válida")

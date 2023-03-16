@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import Afiliarme from "./Afiliarme";
@@ -40,14 +40,14 @@ export default function AfiliarmeIndex({ match }) {
       {loading ? (
         <Loading />
       ) : (
-        <Switch>
+        <Route>
           <RutaPrivada
             exact
             path={path}
             Component={Afiliarme}
             userAuth={isAuthenticated}
           />
-        </Switch>
+        </Route>
       )}
     </>
   );

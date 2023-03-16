@@ -1,4 +1,4 @@
-.HIColor {
+.HomeIntroductionTextColor {
   color: white;
 }
 
@@ -90,4 +90,5 @@
   justify-content: center;
   padding-bottom: 60px;
   font-size: 20px;
+  padding-top: 50px;
 }

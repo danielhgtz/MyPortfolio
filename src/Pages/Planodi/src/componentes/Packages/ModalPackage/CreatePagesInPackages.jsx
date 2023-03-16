@@ -15,7 +15,7 @@ import { AiFillCaretLeft } from "react-icons/ai/index";
 import Chip from "@material-ui/core/Chip";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
-import { fade } from "@material-ui/core";
+import { alpha } from "@material-ui/core";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import Select from "@material-ui/core/Select";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -42,10 +42,10 @@ export const botonesMoradoNegroRojo = makeStyles(() => ({
   buttonPurp: {
     borderRadius: "6px",
     padding: "16px 26px",
-    backgroundColor: fade("#8c50ff", 0.95),
+    backgroundColor: alpha("#8c50ff", 0.95),
     color: "white",
     "&:hover": {
-      backgroundColor: fade("#8c50ff", 0.85),
+      backgroundColor: alpha("#8c50ff", 0.85),
     },
     "&:focus": {
       outline: "none",
@@ -58,7 +58,7 @@ export const botonesMoradoNegroRojo = makeStyles(() => ({
     border: "#3b3b3b solid 1px",
     color: "#3b3b3b",
     "&:hover": {
-      backgroundColor: fade("#3b3b3b", 0.1),
+      backgroundColor: alpha("#3b3b3b", 0.1),
     },
     "&:focus": {
       outline: "none",
@@ -70,7 +70,7 @@ export const botonesMoradoNegroRojo = makeStyles(() => ({
     backgroundColor: "#3b3b3b",
     color: "white",
     "&:hover": {
-      backgroundColor: fade("#3b3b3b", 0.95),
+      backgroundColor: alpha("#3b3b3b", 0.95),
     },
     "&:focus": {
       outline: "none",
@@ -83,7 +83,7 @@ export const botonesMoradoNegroRojo = makeStyles(() => ({
     border: "#0D3B66 solid 1px",
     color: "#0D3B66",
     "&:hover": {
-      backgroundColor: fade("#0D3B66", 0.1),
+      backgroundColor: alpha("#0D3B66", 0.1),
     },
     "&:focus": {
       outline: "none",
@@ -95,7 +95,7 @@ export const botonesMoradoNegroRojo = makeStyles(() => ({
     backgroundColor: "#0D3B66",
     color: "white",
     "&:hover": {
-      backgroundColor: fade("#0D3B66", 0.95),
+      backgroundColor: alpha("#0D3B66", 0.95),
     },
     "&:focus": {
       outline: "none",
@@ -105,10 +105,10 @@ export const botonesMoradoNegroRojo = makeStyles(() => ({
     marginTop: "1rem",
     borderRadius: "6px",
     padding: "16px 26px",
-    backgroundColor: fade("#de3636", 1),
+    backgroundColor: alpha("#de3636", 1),
     color: "white",
     "&:hover": {
-      backgroundColor: fade("#de3636", 0.9),
+      backgroundColor: alpha("#de3636", 0.9),
     },
     "&:focus": {
       outline: "none",

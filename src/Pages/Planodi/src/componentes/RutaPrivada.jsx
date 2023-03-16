@@ -1,33 +1,33 @@
-import React from 'react';
-import { Redirect, Route, Switch } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import React from "react";
+import { Navigate, Route } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 export default function RutaPrivada({ Component, exact, path, location }) {
   const authUser = useSelector((state) => state.user.isAuthenticated);
-  const rootRoute = path.split('/')[1];
+  const rootRoute = path.split("/")[1];
   let authorized = false;
-  let pathname = '/';
+  let pathname = "/";
 
   switch (rootRoute) {
-    case 'afiliarme':
+    case "afiliarme":
       authorized = authUser;
-      pathname = '/registro';
+      pathname = "/registro";
       break;
-    case 'mis-negocios':
+    case "mis-negocios":
       authorized = authUser;
-      pathname = '/';
+      pathname = "/";
       break;
-    case 'admin':
+    case "admin":
       authorized = authUser;
-      pathname = '/';
+      pathname = "/";
       break;
-    case 'change-password':
+    case "change-password":
       authorized = authUser;
-      pathname = '/';
+      pathname = "/";
       break;
     default:
       authorized = false;
-      pathname = '/';
+      pathname = "/";
   }
 
   return (
@@ -38,14 +38,14 @@ export default function RutaPrivada({ Component, exact, path, location }) {
         authorized ? (
           <Component />
         ) : (
-          <Switch>
-            <Redirect
+          <Route>
+            <Navigate
               to={{
                 pathname,
                 state: { referrer: location },
               }}
             />
-          </Switch>
+          </Route>
         )
       }
     />

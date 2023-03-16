@@ -8,7 +8,7 @@ import { Form, Formik } from "formik";
 import * as yup from "yup";
 import MyTextField from "../../../../componentes/formikInputs/MyTextField/MyTextField";
 import makeStyles from "@material-ui/core/styles/makeStyles";
-import { fade } from "@material-ui/core";
+import { alpha } from "@material-ui/core";
 import { useDispatch } from "react-redux";
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
@@ -37,7 +37,7 @@ const useStyles = makeStyles(() => ({
     transition: "0.2s",
     padding: "0.5rem 3rem",
     "&:hover": {
-      backgroundColor: fade("#8c50ff", 0.9),
+      backgroundColor: alpha("#8c50ff", 0.9),
       color: "white",
     },
     "&:focus": {

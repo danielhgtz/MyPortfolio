@@ -4,10 +4,10 @@ import "./ModalFiltros.css";
 import { ThemeProvider } from "@material-ui/styles";
 import Slider from "@material-ui/core/Slider";
 import { arrayToStringMoney } from "../../../../Utils/MoneyFunctions";
-import { createMuiTheme } from "@material-ui/core/styles";
+import { createTheme } from "@material-ui/core/styles";
 import DotLoading from "../../../../componentes/DotLoading/DotLoading";
 
-const muiTheme = createMuiTheme({
+const muiTheme = createTheme({
   overrides: {
     MuiSlider: {
       thumb: {

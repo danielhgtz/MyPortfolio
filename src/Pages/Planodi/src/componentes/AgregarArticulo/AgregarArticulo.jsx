@@ -6,7 +6,7 @@ import { HiOutlinePencil } from "react-icons/hi/index";
 import { MdAddShoppingCart, MdRemoveShoppingCart } from "react-icons/md";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
-import { fade } from "@material-ui/core";
+import { alpha } from "@material-ui/core";
 
 const useStyles = makeStyles(() => ({
   buttonAdd: {
@@ -17,19 +17,19 @@ const useStyles = makeStyles(() => ({
     backgroundColor: "white",
     color: "#3b3b3b",
     "&:hover": {
-      backgroundColor: fade("#fcfcfc", 0.9),
+      backgroundColor: alpha("#fcfcfc", 0.9),
     },
     "&:focus": {
       outline: "none",
     },
   },
   buttonRemove: {
-    backgroundColor: fade("#de3636", 1),
+    backgroundColor: alpha("#de3636", 1),
     marginTop: "0.9rem",
     fontSize: "0.8rem",
     color: "white",
     "&:hover": {
-      backgroundColor: fade("#de3636", 0.9),
+      backgroundColor: alpha("#de3636", 0.9),
     },
     "&:focus": {
       outline: "none",

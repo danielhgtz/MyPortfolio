@@ -8,7 +8,7 @@ import "./HomeIntroductionText.css";
 
 export const HomeIntroductionText = ({ homeAboutRef }) => {
   return (
-    <div ref={homeAboutRef} className="HIColor">
+    <div ref={homeAboutRef} className="HomeIntroductionTextColor">
       <div className="centerFirstDiv">
         <h1>
           LET ME <span className="blueColor">INTRODUCE </span>

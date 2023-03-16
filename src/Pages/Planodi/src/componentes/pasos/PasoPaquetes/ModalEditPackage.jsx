@@ -1,68 +1,68 @@
-import React, { useEffect, useState } from 'react';
-import Dialog from '@material-ui/core/Dialog';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import DialogContent from '@material-ui/core/DialogContent';
-import Button from '@material-ui/core/Button';
-import Grid from '@material-ui/core/Grid';
-import { Form, Formik } from 'formik';
-import * as yup from 'yup';
-import IconButton from '@material-ui/core/IconButton';
-import makeStyles from '@material-ui/core/styles/makeStyles';
-import { fade } from '@material-ui/core';
-import CloseIcon from '@material-ui/icons/Close';
-import Alert from '@material-ui/lab/Alert';
-import { AiFillDelete } from 'react-icons/ai';
+import React, { useEffect, useState } from "react";
+import Dialog from "@material-ui/core/Dialog";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import DialogContent from "@material-ui/core/DialogContent";
+import Button from "@material-ui/core/Button";
+import Grid from "@material-ui/core/Grid";
+import { Form, Formik } from "formik";
+import * as yup from "yup";
+import IconButton from "@material-ui/core/IconButton";
+import makeStyles from "@material-ui/core/styles/makeStyles";
+import { alpha } from "@material-ui/core";
+import CloseIcon from "@material-ui/icons/Close";
+import Alert from "@material-ui/lab/Alert";
+import { AiFillDelete } from "react-icons/ai";
 
-import '../PasoImagenes/PasoImagenes.css';
-import './PasoCreatePackages.css';
-import MyTextField from '../../formikInputs/MyTextField/MyTextField';
-import MyLongText from '../../formikInputs/MyLongText/MyLongText';
-import MyMoneyInput from '../../formikInputs/MyMoneyInput/MyMoneyInput';
-import PublishIcon from '@material-ui/icons/Publish';
+import "../PasoImagenes/PasoImagenes.css";
+import "./PasoCreatePackages.css";
+import MyTextField from "../../formikInputs/MyTextField/MyTextField";
+import MyLongText from "../../formikInputs/MyLongText/MyLongText";
+import MyMoneyInput from "../../formikInputs/MyMoneyInput/MyMoneyInput";
+import PublishIcon from "@material-ui/icons/Publish";
 import {
   filterImageSize,
   imageCompressorAndFilter,
-} from '../../../Utils/filterSize';
-import ClearIcon from '@material-ui/icons/Clear';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import Loading from '../../Loading/Loading';
-import axios from 'axios';
-import { userHeaders } from '../../../Utils/headerSetter';
-import DotLoading from '../../DotLoading/DotLoading';
+} from "../../../Utils/filterSize";
+import ClearIcon from "@material-ui/icons/Clear";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import Loading from "../../Loading/Loading";
+import axios from "axios";
+import { userHeaders } from "../../../Utils/headerSetter";
+import DotLoading from "../../DotLoading/DotLoading";
 
 const useStyles = makeStyles(() => ({
   buttonGuardar: {
-    height: '45px',
-    width: '50%',
-    margin: '0 1rem',
-    borderRadius: '10px',
-    fontSize: '0.8rem',
-    backgroundColor: '#8c50ff',
-    color: 'white',
-    transition: '0.2s',
-    '&:hover': {
-      backgroundColor: fade('#8c50ff', 0.9),
-      color: 'white',
+    height: "45px",
+    width: "50%",
+    margin: "0 1rem",
+    borderRadius: "10px",
+    fontSize: "0.8rem",
+    backgroundColor: "#8c50ff",
+    color: "white",
+    transition: "0.2s",
+    "&:hover": {
+      backgroundColor: alpha("#8c50ff", 0.9),
+      color: "white",
     },
-    '&:focus': {
-      outline: 'none',
+    "&:focus": {
+      outline: "none",
     },
   },
   buttonCancelar: {
-    height: '45px',
-    width: '50%',
-    margin: '0 1rem',
-    borderRadius: '10px',
-    fontSize: '0.8rem',
-    backgroundColor: 'white',
-    color: '#8c50ff',
-    border: 'solid #8c50ff 2px',
-    transition: '0.2s',
-    '&:hover': {
-      backgroundColor: '#f5f5f5',
+    height: "45px",
+    width: "50%",
+    margin: "0 1rem",
+    borderRadius: "10px",
+    fontSize: "0.8rem",
+    backgroundColor: "white",
+    color: "#8c50ff",
+    border: "solid #8c50ff 2px",
+    transition: "0.2s",
+    "&:hover": {
+      backgroundColor: "#f5f5f5",
     },
-    '&:focus': {
-      outline: 'none',
+    "&:focus": {
+      outline: "none",
     },
   },
 }));
@@ -81,16 +81,16 @@ export default function ModalEditPackages({
   const [deletePackageClick, setDeletePackageClick] = useState(false);
   const [error, setError] = useState(false);
   const [errorMsg, setErrorMsg] = useState(
-    'Error en el servidor, comunícate con nosotros'
+    "Error en el servidor, comunícate con nosotros"
   );
   const [imagenes, setImagenes] = useState([]);
   const [imagesUrl, setImagesUrl] = useState([]);
   const [imagesToDelete, setImagesToDelete] = useState([]);
-  const [mainImage, setMainImage] = useState('');
+  const [mainImage, setMainImage] = useState("");
   const [imagenesPreviewUrl, setImagenesPreviewUrl] = useState([]);
 
   const classes = useStyles();
-  const mobile = useMediaQuery('(max-width:960px)');
+  const mobile = useMediaQuery("(max-width:960px)");
 
   useEffect(() => {
     if (open) {
@@ -111,12 +111,12 @@ export default function ModalEditPackages({
   const validationSchema = yup.object({
     name: yup
       .string()
-      .required('Este campo es requerido')
-      .max(50, 'El nombre no puede exceder los 50 caracteres'),
-    price: yup.string().required('Este campo es requerido'),
+      .required("Este campo es requerido")
+      .max(50, "El nombre no puede exceder los 50 caracteres"),
+    price: yup.string().required("Este campo es requerido"),
     description: yup
       .string()
-      .max(198, 'La descripción no puede exceder los 198 caracteres'),
+      .max(198, "La descripción no puede exceder los 198 caracteres"),
   });
 
   const deleteImage = (e, fotoName) => {
@@ -163,7 +163,7 @@ export default function ModalEditPackages({
     if (filtroSizeRes.deleted) {
       setError(true);
       setErrorMsg(
-        'Se intentaron subir imágenes muy pesadas y las tuvimos que descartar, tamaño máximo: 10MB por imágen.'
+        "Se intentaron subir imágenes muy pesadas y las tuvimos que descartar, tamaño máximo: 10MB por imágen."
       );
     }
     let fileNamesPrevImages = [];
@@ -190,7 +190,7 @@ export default function ModalEditPackages({
     axios
       .post(
         `${
-          process.env.REACT_APP_ENV === 'development'
+          process.env.REACT_APP_ENV === "development"
             ? process.env.REACT_APP_API_LOCAL
             : process.env.REACT_APP_API_PROD
         }user/deletePackage`,
@@ -200,7 +200,7 @@ export default function ModalEditPackages({
         userHeaders()
       )
       .then(() => {
-        setMainImage('');
+        setMainImage("");
         setImagenes([]);
         setImagesUrl([]);
         setImagesToDelete([]);
@@ -225,7 +225,7 @@ export default function ModalEditPackages({
         loading
           ? () => {}
           : () => {
-              setMainImage('');
+              setMainImage("");
               setImagenes([]);
               setImagesUrl([]);
               setImagesToDelete([]);
@@ -238,11 +238,11 @@ export default function ModalEditPackages({
       fullWidth={true}
       maxWidth="md"
       fullScreen={mobile}
-      style={{ minWidth: '340px' }}
+      style={{ minWidth: "340px" }}
     >
       {deletePackageClick ? (
         <div className="packages-delete-confirmation-wrp">
-          <p style={{ textAlign: 'center' }}>
+          <p style={{ textAlign: "center" }}>
             ¿Está seguro que quiere eliminar este paquete?
           </p>
           <div className="packages-edit-bttns-wrp">
@@ -265,7 +265,7 @@ export default function ModalEditPackages({
               loading
                 ? () => {}
                 : () => {
-                    setMainImage('');
+                    setMainImage("");
                     setImagenes([]);
                     setImagesUrl([]);
                     setImagesToDelete([]);
@@ -274,8 +274,8 @@ export default function ModalEditPackages({
                   }
             }
             style={{
-              padding: '0.8rem',
-              position: 'relative',
+              padding: "0.8rem",
+              position: "relative",
             }}
           >
             {loading ? null : (
@@ -286,7 +286,7 @@ export default function ModalEditPackages({
                 <p className="packages-edit-delete-button-p">
                   <span>
                     <AiFillDelete
-                      style={{ fontSize: '1rem', margin: '0 0.3rem 0.3rem 0' }}
+                      style={{ fontSize: "1rem", margin: "0 0.3rem 0.3rem 0" }}
                     />
                   </span>
                   Eliminar
@@ -300,7 +300,7 @@ export default function ModalEditPackages({
                 loading
                   ? () => {}
                   : () => {
-                      setMainImage('');
+                      setMainImage("");
                       setImagenes([]);
                       setImagesUrl([]);
                       setImagesToDelete([]);
@@ -309,11 +309,11 @@ export default function ModalEditPackages({
                     }
               }
               style={{
-                position: 'absolute',
-                right: '0',
-                top: '0',
-                marginRight: '0.5rem',
-                marginTop: '0.4rem',
+                position: "absolute",
+                right: "0",
+                top: "0",
+                marginRight: "0.5rem",
+                marginTop: "0.4rem",
               }}
               className="modal-reg-titulo"
             >
@@ -391,7 +391,7 @@ export default function ModalEditPackages({
                 axios
                   .post(
                     `${
-                      process.env.REACT_APP_ENV === 'development'
+                      process.env.REACT_APP_ENV === "development"
                         ? process.env.REACT_APP_API_LOCAL
                         : process.env.REACT_APP_API_PROD
                     }user/updatePackage`,
@@ -410,7 +410,7 @@ export default function ModalEditPackages({
                       .map((item) => {
                         return item.url;
                       });
-                    setMainImage('');
+                    setMainImage("");
                     setImagenes([]);
                     setImagesUrl([]);
                     setImagesToDelete([]);
@@ -446,7 +446,7 @@ export default function ModalEditPackages({
                 <Form>
                   <Grid container>
                     {loading ? (
-                      <div style={{ height: '300px' }}>
+                      <div style={{ height: "300px" }}>
                         <Loading helperText="Esto puede tardar unos minutos" />
                       </div>
                     ) : (
@@ -455,7 +455,7 @@ export default function ModalEditPackages({
                           <Grid item xs={12}>
                             <Alert
                               severity="error"
-                              style={{ margin: '0 0.5rem 1.3rem 0.5rem' }}
+                              style={{ margin: "0 0.5rem 1.3rem 0.5rem" }}
                             >
                               {errorMsg}
                             </Alert>
@@ -472,41 +472,41 @@ export default function ModalEditPackages({
                           <MyMoneyInput
                             name="price"
                             placeholder="Precio del paquete"
-                            style={{ width: '100%', paddingRight: '1rem' }}
+                            style={{ width: "100%", paddingRight: "1rem" }}
                           />
                         </Grid>
-                        <Grid item xs={12} style={{ padding: '0 0.5rem' }}>
+                        <Grid item xs={12} style={{ padding: "0 0.5rem" }}>
                           <MyLongText
                             name="description"
                             rows={2}
                             placeholder="Describe a tus clientes qué incluye este paquete y por qué les conviene comprarlo contigo"
-                            style={{ width: '100%', marginTop: '0.5rem' }}
+                            style={{ width: "100%", marginTop: "0.5rem" }}
                           />
                         </Grid>
 
                         <div className="img-buttons-packages-modal">
-                          <p style={{ fontSize: '0.9rem', fontWeight: 500 }}>
+                          <p style={{ fontSize: "0.9rem", fontWeight: 500 }}>
                             La imagen seleccionada en morado será la principal.
                             Puede cambiarla dando click sobre otra imagen.
                             Máximo 5 imágenes por paquete.
                           </p>
                           <div className="package-mod-prin-img-success">
                             {loadingImages ? (
-                              <div style={{ marginBottom: '2rem' }}>
+                              <div style={{ marginBottom: "2rem" }}>
                                 <p
                                   style={{
-                                    color: '#0D3B66',
+                                    color: "#0D3B66",
                                     opacity: 0.4,
-                                    fontSize: '0.8rem',
-                                    textAlign: 'center',
+                                    fontSize: "0.8rem",
+                                    textAlign: "center",
                                   }}
                                 >
                                   Optimizando imágenes, espere un momento...
                                 </p>
                                 <div
                                   style={{
-                                    position: 'relative',
-                                    width: '100%',
+                                    position: "relative",
+                                    width: "100%",
                                   }}
                                 >
                                   <DotLoading />
@@ -516,16 +516,16 @@ export default function ModalEditPackages({
                               imagesUrl.map((file) => (
                                 <div
                                   className={`afil-div-preview-pckg ${
-                                    mainImage === file ? 'active' : null
+                                    mainImage === file ? "active" : null
                                   }`}
                                   key={Math.random()}
                                   onClick={() => setMainImage(file)}
                                 >
                                   <div
                                     style={{
-                                      width: '100%',
-                                      maxHeight: '150px',
-                                      overflow: 'hidden',
+                                      width: "100%",
+                                      maxHeight: "150px",
+                                      overflow: "hidden",
                                     }}
                                   >
                                     <img
@@ -540,7 +540,7 @@ export default function ModalEditPackages({
                                       deleteImage(e, file);
                                     }}
                                   >
-                                    <ClearIcon style={{ fontSize: '0.8rem' }} />
+                                    <ClearIcon style={{ fontSize: "0.8rem" }} />
                                   </div>
                                 </div>
                               ))
@@ -551,16 +551,16 @@ export default function ModalEditPackages({
                               ? imagenes.map((file, idx) => (
                                   <div
                                     className={`afil-div-preview-pckg ${
-                                      mainImage === file.name ? 'active' : null
+                                      mainImage === file.name ? "active" : null
                                     }`}
                                     key={Math.random()}
                                     onClick={() => setMainImage(file.name)}
                                   >
                                     <div
                                       style={{
-                                        width: '100%',
-                                        maxHeight: '150px',
-                                        overflow: 'hidden',
+                                        width: "100%",
+                                        maxHeight: "150px",
+                                        overflow: "hidden",
                                       }}
                                     >
                                       <img
@@ -576,7 +576,7 @@ export default function ModalEditPackages({
                                       }}
                                     >
                                       <ClearIcon
-                                        style={{ fontSize: '0.8rem' }}
+                                        style={{ fontSize: "0.8rem" }}
                                       />
                                     </div>
                                   </div>
@@ -586,11 +586,11 @@ export default function ModalEditPackages({
                           {imagenes.length + imagesUrl.length >= 5 ? null : (
                             <div
                               className="img-button-principal"
-                              style={{ marginTop: '2rem' }}
+                              style={{ marginTop: "2rem" }}
                             >
                               <input
                                 accept="image/*"
-                                style={{ display: 'none' }}
+                                style={{ display: "none" }}
                                 id="contained-button-img-pckg-mas"
                                 type="file"
                                 multiple
@@ -603,8 +603,8 @@ export default function ModalEditPackages({
                                 style={
                                   loadingImages
                                     ? {
-                                        pointerEvents: 'none',
-                                        background: '#a7a7a7',
+                                        pointerEvents: "none",
+                                        background: "#a7a7a7",
                                         opacity: 0.8,
                                       }
                                     : null
@@ -621,7 +621,7 @@ export default function ModalEditPackages({
                           <Button
                             className={classes.buttonCancelar}
                             onClick={() => {
-                              setMainImage('');
+                              setMainImage("");
                               setImagenes([]);
                               setImagesUrl([]);
                               setImagesToDelete([]);

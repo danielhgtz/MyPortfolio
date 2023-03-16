@@ -5,12 +5,12 @@ import CloseIcon from "@material-ui/icons/Close";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import "./Filtros.css";
 import Slider from "@material-ui/core/Slider";
-import { createMuiTheme } from "@material-ui/core/styles";
+import { createTheme } from "@material-ui/core/styles";
 import { ThemeProvider } from "@material-ui/styles";
 import { arrayToStringMoney } from "../../../Utils/MoneyFunctions";
 import DotLoading from "../../../componentes/DotLoading/DotLoading";
 
-const muiTheme = createMuiTheme({
+const muiTheme = createTheme({
   overrides: {
     MuiSlider: {
       thumb: {

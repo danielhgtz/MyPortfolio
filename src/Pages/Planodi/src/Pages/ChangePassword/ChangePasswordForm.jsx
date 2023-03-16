@@ -7,7 +7,7 @@ import Button from "@material-ui/core/Button";
 import ErrorMsg from "../../componentes/ErrorMsg";
 import MyTextField from "../../componentes/formikInputs/MyTextField/MyTextField";
 import makeStyles from "@material-ui/core/styles/makeStyles";
-import { fade } from "@material-ui/core";
+import { alpha } from "@material-ui/core";
 import { userHeaders } from "../../Utils/headerSetter";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -24,7 +24,7 @@ const useStyles = makeStyles(() => ({
     transition: "0.2s",
     padding: "0.5rem 3rem",
     "&:hover": {
-      backgroundColor: fade("#8c50ff", 0.9),
+      backgroundColor: alpha("#8c50ff", 0.9),
       color: "white",
     },
     "&:focus": {

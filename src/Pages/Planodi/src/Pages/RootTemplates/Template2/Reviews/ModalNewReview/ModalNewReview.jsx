@@ -12,7 +12,7 @@ import axios from "axios";
 import { Form, Formik } from "formik";
 import Button from "@material-ui/core/Button";
 import makeStyles from "@material-ui/core/styles/makeStyles";
-import { fade } from "@material-ui/core";
+import { alpha } from "@material-ui/core";
 import MyLongText from "../../../../../componentes/formikInputs/MyLongText/MyLongText";
 import ErrorMsg from "../../../../../componentes/ErrorMsg";
 import { IoStar, IoStarOutline } from "react-icons/io5/index";
@@ -29,7 +29,7 @@ const useStyles = makeStyles(() => ({
     color: "white",
     transition: "0.2s",
     "&:hover": {
-      backgroundColor: fade("#3b3b3b", 0.9),
+      backgroundColor: alpha("#3b3b3b", 0.9),
       color: "white",
     },
     "&:focus": {

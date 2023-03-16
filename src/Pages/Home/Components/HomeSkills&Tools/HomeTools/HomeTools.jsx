@@ -15,7 +15,7 @@ export const HomeTools = () => {
       <div className="mainDivTools">
         <h1>Software & Tools:</h1>
 
-        <div className="row">
+        <div className="HSTRow">
           <div className="div1">
             <div className="innerDiv">
               <VisualStudioVector />

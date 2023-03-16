@@ -1,7 +1,7 @@
 import React from "react";
 import "./AfiliarSection.css";
 import { makeStyles } from "@material-ui/core/styles";
-import { fade } from "@material-ui/core";
+import { alpha } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
@@ -13,10 +13,10 @@ const useStyles = makeStyles(() => ({
   buttonAfil: {
     borderRadius: "10px",
     padding: "12px 24px",
-    backgroundColor: fade("#FFFFFF", 0.95),
+    backgroundColor: alpha("#FFFFFF", 0.95),
     color: "#3b3b3b",
     "&:hover": {
-      backgroundColor: fade("#FFFFFF", 0.85),
+      backgroundColor: alpha("#FFFFFF", 0.85),
       color: "#3b3b3b",
     },
     "&:focus": {

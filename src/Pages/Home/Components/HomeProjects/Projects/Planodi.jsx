@@ -9,8 +9,14 @@ import { CssVector } from "../../../../../Assets/SkillsVectors/CssVector";
 import { NodeJSVector } from "../../../../../Assets/SkillsVectors/NodeJSVector";
 import { MySQLVector } from "../../../../../Assets/SkillsVectors/MySQLVector";
 import { ExpressVector } from "../../../../../Assets/SkillsVectors/ExpressVector";
+import { useNavigate } from "react-router-dom";
 
 export const Planodi = () => {
+  const navigate = useNavigate();
+
+  const navigatePlanodi = () => {
+    navigate("./Planodi");
+  };
   return (
     <div>
       <ProjectComponent
@@ -47,6 +53,7 @@ export const Planodi = () => {
         ]}
         gitHubLink={"https://github.com/EstebanPerez99/planodi"}
         booleanDemo={true}
+        demoLinkFx={navigatePlanodi}
       />
     </div>
   );

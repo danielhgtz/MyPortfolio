@@ -9,7 +9,7 @@ import * as yup from "yup";
 import IconButton from "@material-ui/core/IconButton";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import axios from "axios";
-import { fade } from "@material-ui/core";
+import { alpha } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
 import Alert from "@material-ui/lab/Alert";
 
@@ -60,7 +60,7 @@ const useStyles = makeStyles(() => ({
     color: "white",
     transition: "0.2s",
     "&:hover": {
-      backgroundColor: fade("#8c50ff", 0.9),
+      backgroundColor: alpha("#8c50ff", 0.9),
       color: "white",
     },
     "&:focus": {

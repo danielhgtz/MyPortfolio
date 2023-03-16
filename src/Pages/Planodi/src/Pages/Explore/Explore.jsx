@@ -412,7 +412,7 @@ export default function Explore() {
 
   useDidMountEffect(() => {
     setLoading(true);
-    navigate.push(`?${createQueryString(false)}`);
+    // navigate.push(`?${createQueryString(false)}`);
     setPaginaActual(1);
     axios
       .get(

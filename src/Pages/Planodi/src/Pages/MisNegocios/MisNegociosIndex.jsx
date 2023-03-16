@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
 import RutaPrivada from "../../componentes/RutaPrivada";
@@ -40,14 +40,14 @@ export default function MiNegocioIndex({ match }) {
       {loading ? (
         <Loading />
       ) : (
-        <Switch>
+        <Route>
           <RutaPrivada
             exact
             path={path}
             Component={MisNegocios}
             userAuth={isAuthenticated}
           />
-        </Switch>
+        </Route>
       )}
     </>
   );
