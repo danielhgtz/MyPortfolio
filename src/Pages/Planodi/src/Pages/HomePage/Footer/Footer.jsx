@@ -49,6 +49,10 @@ export default function Footer({ color, offSetY }) {
     }
   };
 
+  const navigateToBuscador = () => {
+    navigate("/Planodi/buscador");
+  };
+
   return (
     <div
       className={
@@ -80,94 +84,49 @@ export default function Footer({ color, offSetY }) {
         >
           Categorías
         </h3>
-        <a
-          href="https://planodi.com/buscador?category=1"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Servicios de comida/ Banquetes
         </a>
-        <a
-          href="https://planodi.com/buscador?category=2"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Servicios de bebidas
         </a>
-        <a
-          href="https://planodi.com/buscador?category=3"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Salones de eventos/ Terrazas
         </a>
-        <a
-          href="https://planodi.com/buscador?category=4"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Música en vivo/ Dj
         </a>
-        <a
-          href="https://planodi.com/buscador?category=5"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Fotografía/ Video de eventos
         </a>
-        <a
-          href="https://planodi.com/buscador?category=6"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Renta de mobiliario
         </a>
-        <a
-          href="https://planodi.com/buscador?category=7"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Animación/ Renta de juegos para eventos
         </a>
-        <a
-          href="https://planodi.com/buscador?category=8"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Decoración para eventos
         </a>
-        <a
-          href="https://planodi.com/buscador?category=9"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Organizadores de eventos
         </a>
-        <a
-          href="https://planodi.com/buscador?category=10"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Meseros para eventos
         </a>
-        <a
-          href="https://planodi.com/buscador?category=11"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Invitaciones/ recuerdos de eventos
         </a>
-        <a
-          href="https://planodi.com/buscador?category=12"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Mesas de dulces/ Candy Bar
         </a>
-        <a
-          href="https://planodi.com/buscador?category=13"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Pasteles y postres
         </a>
-        <a
-          href="https://planodi.com/buscador?category=14"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Piñatas y dulces
         </a>
-        <a
-          href="https://planodi.com/buscador?category=15"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Maquillaje y peinado
         </a>
       </div>
@@ -177,58 +136,31 @@ export default function Footer({ color, offSetY }) {
         >
           Eventos
         </h3>
-        <a
-          href="https://planodi.com/buscador?event=1"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Cumpleaños
         </a>
-        <a
-          href="https://planodi.com/buscador?event=3"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Fiesta infantil
         </a>
-        <a
-          href="https://planodi.com/buscador?event=4"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Boda
         </a>
-        <a
-          href="https://planodi.com/buscador?event=2"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           XV años
         </a>
-        <a
-          href="https://planodi.com/buscador?event=5"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Corporativo
         </a>
-        <a
-          href="https://planodi.com/buscador?event=6"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Pool party
         </a>
-        <a
-          href="https://planodi.com/buscador?event=7"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Baby shower / Gender reveal
         </a>
-        <a
-          href="https://planodi.com/buscador?event=8"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Roof top party
         </a>
-        <a
-          href="https://planodi.com/buscador?event=9"
-          className="footer-categories-a"
-        >
+        <a onClick={navigateToBuscador} className="footer-categories-a">
           Bautizo / Primera comunión
         </a>
       </div>
@@ -252,7 +184,7 @@ export default function Footer({ color, offSetY }) {
             </p>
             <p
               onClick={() => {
-                window.open("https://planodi.com/informacion");
+                navigate("/Planodi/informacion", { replace: true });
               }}
               style={{ cursor: "pointer" }}
             >

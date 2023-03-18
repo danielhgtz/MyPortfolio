@@ -1,12 +1,12 @@
-.container {
-  margin-left: 25px;
-  margin-right: 25px;
+.homeContainer {
+  margin-left: 40px;
+  margin-right: 40px;
   font-family: "Poppins", sans-serif;
   font-size: 27px;
   font-weight: 700;
 }
 
-.blackBackground {
+.homeBackground {
   background-color: black;
   height: 100%;
   width: 100%;

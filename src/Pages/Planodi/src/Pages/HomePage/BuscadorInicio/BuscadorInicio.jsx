@@ -383,22 +383,14 @@ export default function BuscadorInicio({ estados, categorias, loading }) {
               {mobile ? (
                 <Button
                   className={`inicio-boton-go ${classes.button}`}
-                  href={`${
-                    process.env.REACT_APP_ENV === "development"
-                      ? process.env.REACT_APP_LINK_FE_LOCAL
-                      : process.env.REACT_APP_LINK_FE_PROD
-                  }buscador?${createQueryString()}`}
+                  href={"/Planodi/buscador"}
                 >
                   Buscar
                 </Button>
               ) : (
                 <Button
                   className={`inicio-boton-go ${classes.buttonDesktop}`}
-                  href={`${
-                    process.env.REACT_APP_ENV === "development"
-                      ? process.env.REACT_APP_LINK_FE_LOCAL
-                      : process.env.REACT_APP_LINK_FE_PROD
-                  }buscador?${createQueryString()}`}
+                  href={"/Planodi/buscador"}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

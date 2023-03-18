@@ -30,23 +30,23 @@ export const Navbar = ({ homeAboutRef, homeSkillsRef, homeProjectsRef }) => {
   return (
     <nav className={navbarBoolean ? "navbarDiv active" : "navbarDiv"}>
       <div className="nameContainer">
-        <a className="navbarName" onClick={navigateTop}>
+        <div className="navbarName" onClick={navigateTop}>
           Daniel H. Gutierrez
-        </a>
+        </div>
       </div>
       <div className="linkContainer">
-        <div>
-          <a
+        <div className="navbarElement">
+          <div
             className="navAbout"
             onClick={() => {
               homeAboutRef.current?.scrollIntoView({ behavior: "smooth" });
             }}
           >
             <AboutVector /> About
-          </a>
+          </div>
         </div>
-        <div>
-          <a
+        <div className="navbarElement">
+          <div
             className="navExperience"
             onClick={() => {
               homeSkillsRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -54,11 +54,11 @@ export const Navbar = ({ homeAboutRef, homeSkillsRef, homeProjectsRef }) => {
           >
             <ExperienceVector />
             Skills & Softwares
-          </a>
+          </div>
         </div>
 
-        <div>
-          <a
+        <div className="navbarElement">
+          <div
             className="navProjects"
             onClick={() => {
               homeProjectsRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -66,13 +66,13 @@ export const Navbar = ({ homeAboutRef, homeSkillsRef, homeProjectsRef }) => {
           >
             <ProjectsVectors />
             Projects
-          </a>
+          </div>
         </div>
-        <div>
-          <a className="navResume" onClick={navigateToResume}>
+        <div className="navbarElement">
+          <div className="navResume" onClick={navigateToResume}>
             <ResumeVector />
             Resume
-          </a>
+          </div>
         </div>
       </div>
     </nav>

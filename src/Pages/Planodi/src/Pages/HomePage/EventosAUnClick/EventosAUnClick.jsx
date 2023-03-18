@@ -26,7 +26,10 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-export default function EventosAUnClick({ setOpenLoginModal }) {
+export default function EventosAUnClick({
+  setOpenLoginModal,
+  EventosAUnClickRef,
+}) {
   const mobile = useMediaQuery("(max-width:960px)");
   const classes = useStyles();
   const ref = useRef(null);
@@ -53,7 +56,11 @@ export default function EventosAUnClick({ setOpenLoginModal }) {
   };
 
   return (
-    <div className="wrapper-even-a-un-click" id="eventos-a-un-click">
+    <div
+      className="wrapper-even-a-un-click"
+      id="eventos-a-un-click"
+      ref={EventosAUnClickRef}
+    >
       <ModalEventosAUnClick
         handleClose={() => setShowPackageModal(false)}
         open={showPackageModal}

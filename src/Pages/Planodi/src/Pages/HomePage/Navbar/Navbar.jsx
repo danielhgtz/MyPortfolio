@@ -1,5 +1,12 @@
 import React, { useEffect, useRef, useState, useCallback } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import {
+  Link,
+  useLocation,
+  useNavigate,
+  Routes,
+  Route,
+} from "react-router-dom";
+
 import MenuIcon from "@material-ui/icons/Menu";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import "./Navbar.css";
@@ -36,7 +43,7 @@ export function useAuthModals() {
  * @param type: "purple" || "black" || "white"
  * @param fix: bool
  */
-export default function Navbar({ shadow, type, fix }) {
+export default function Navbar({ shadow, type, fix, EventosAUnClickRef }) {
   const location = useLocation();
   const pathName = location.pathname;
   const {
@@ -239,65 +246,86 @@ export default function Navbar({ shadow, type, fix }) {
             margin: "0",
           }}
         >
-          <div className="img-logo-nav">
-            <Link to="/">
-              <img
-                src={logoColor}
-                style={{
-                  maxWidth: "9rem",
+          <div className="flex">
+            <div
+              className="planodiNavbarName"
+              onClick={() => {
+                navigate("/");
+              }}
+            >
+              Daniel H. Gutierrez
+            </div>
+            <div className="img-logo-nav">
+              <div
+                onClick={() => {
+                  navigate("/Planodi");
                 }}
-                alt="Logo"
-              />
-            </Link>
+              >
+                <img
+                  src={logoColor}
+                  style={{
+                    maxWidth: "9rem",
+                  }}
+                  alt="Logo"
+                />
+              </div>
+            </div>
           </div>
+
           <div className="navbar-centro">
-            {mostrarMenu ? (
-              <>
+            <>
+              <div
+                onClick={() => {
+                  if (location.pathname === "/Planodi/buscador") {
+                    navigate("/Planodi");
+                  } else {
+                    EventosAUnClickRef.current?.scrollIntoView({
+                      behavior: "smooth",
+                    });
+                  }
+                }}
+                className={
+                  fixNavbarTop
+                    ? "navbar-opciones-centro active"
+                    : "navbar-opciones-centro"
+                }
+              >
+                Eventos a un click
+              </div>
+              <div
+                onClick={() => navigate("/Planodi/buscador")}
+                className={
+                  fixNavbarTop
+                    ? "navbar-opciones-centro active"
+                    : "navbar-opciones-centro"
+                }
+              >
+                Explorar catálogo
+              </div>
+              <p
+                className={
+                  fixNavbarTop
+                    ? "navbar-opciones-centro active"
+                    : "navbar-opciones-centro"
+                }
+                onClick={handleAfiliarmeButton}
+                style={{ fontWeight: 500 }}
+              >
+                Afilia tu negocio gratis
+              </p>
+              {stateUser.isAuthenticated && !!stateUser.userInfo?.isAlly && (
                 <a
-                  href="#eventos-a-un-click"
+                  href="/mis-negocios"
                   className={
                     fixNavbarTop
                       ? "navbar-opciones-centro active"
                       : "navbar-opciones-centro"
                   }
                 >
-                  Eventos a un click
+                  Mis negocios
                 </a>
-                <a
-                  href="/buscador"
-                  className={
-                    fixNavbarTop
-                      ? "navbar-opciones-centro active"
-                      : "navbar-opciones-centro"
-                  }
-                >
-                  Explorar catálogo
-                </a>
-                <p
-                  className={
-                    fixNavbarTop
-                      ? "navbar-opciones-centro active"
-                      : "navbar-opciones-centro"
-                  }
-                  onClick={handleAfiliarmeButton}
-                  style={{ fontWeight: 500 }}
-                >
-                  Afilia tu negocio gratis
-                </p>
-                {stateUser.isAuthenticated && !!stateUser.userInfo?.isAlly && (
-                  <a
-                    href="/mis-negocios"
-                    className={
-                      fixNavbarTop
-                        ? "navbar-opciones-centro active"
-                        : "navbar-opciones-centro"
-                    }
-                  >
-                    Mis negocios
-                  </a>
-                )}
-              </>
-            ) : null}
+              )}
+            </>
           </div>
           <div className="botones-desktop">
             <div
@@ -355,7 +383,7 @@ export default function Navbar({ shadow, type, fix }) {
             Afilia tu negocio gratis
           </p>
           <hr style={{ margin: "0" }} />
-          <p className="acciones" onClick={() => navigate.push("/buscador")}>
+          <p className="acciones" onClick={() => navigate("/Planodi/buscador")}>
             Explorar catálogo
           </p>
           {stateUser.isAuthenticated && !!stateUser.userInfo?.isAlly && (

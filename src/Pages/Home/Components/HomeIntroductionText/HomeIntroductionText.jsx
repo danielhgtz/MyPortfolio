@@ -10,7 +10,7 @@ export const HomeIntroductionText = ({ homeAboutRef }) => {
   return (
     <div ref={homeAboutRef} className="HomeIntroductionTextColor">
       <div className="centerFirstDiv">
-        <h1>
+        <h1 style={{ paddingBottom: "30px", marginTop: "10px" }}>
           LET ME <span className="blueColor">INTRODUCE </span>
           MYSELF :&#41;
         </h1>

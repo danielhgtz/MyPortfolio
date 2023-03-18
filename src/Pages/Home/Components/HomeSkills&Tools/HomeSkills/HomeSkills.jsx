@@ -15,7 +15,7 @@ import "../HomeSkills&Tools.css";
 export const HomeSkills = ({ homeSkillsRef }) => {
   return (
     <div ref={homeSkillsRef} className="mainDivSkills">
-      <h1>Professional Skills:</h1>
+      <h1 style={{ marginTop: "10px" }}>Professional Skills:</h1>
       <div className="HSTRow">
         <div className="div1">
           <div className="innerDiv">

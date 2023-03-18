@@ -2,5 +2,6 @@ body {
   /* height: 100vh; */
   place-items: center;
   margin: 0;
-  background: linear-gradient(90deg, #f8d5c6, #2e537c);
+  /* background: linear-gradient(90deg, #f8d5c6, #2e537c); */
+  background-color: white;
 }

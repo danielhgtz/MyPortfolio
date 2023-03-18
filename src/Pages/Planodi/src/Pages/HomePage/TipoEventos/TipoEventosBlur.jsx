@@ -13,6 +13,7 @@ import "./TipoEventosBlur.css";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa/index";
 import { useNavigate } from "react-router-dom";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { replace } from "formik";
 
 export default function TipoEventosBlur() {
   const mobile = useMediaQuery("(max-width:960px)");
@@ -91,7 +92,7 @@ export default function TipoEventosBlur() {
               className="tipo-ev-blur-wrp-cont-flex-div2"
               style={{ margin: "0 0.5rem" }}
               onClick={() => {
-                navigate.push("/buscador?event=1");
+                navigate("/Planodi/buscador");
               }}
             >
               <div
@@ -106,7 +107,7 @@ export default function TipoEventosBlur() {
               className="tipo-ev-blur-wrp-cont-flex-div2"
               style={{ margin: "0 0.5rem" }}
               onClick={() => {
-                navigate.push("/buscador?event=4");
+                navigate("/Planodi/buscador");
               }}
             >
               <div
@@ -121,7 +122,7 @@ export default function TipoEventosBlur() {
               className="tipo-ev-blur-wrp-cont-flex-div2"
               style={{ margin: "0 0.5rem" }}
               onClick={() => {
-                navigate.push("/buscador?event=5");
+                navigate("/Planodi/buscador");
               }}
             >
               <div
@@ -136,7 +137,7 @@ export default function TipoEventosBlur() {
               className="tipo-ev-blur-wrp-cont-flex-div2"
               style={{ margin: "0 0.5rem" }}
               onClick={() => {
-                navigate.push("/buscador?event=3");
+                navigate("/Planodi/buscador");
               }}
             >
               <div
@@ -154,7 +155,7 @@ export default function TipoEventosBlur() {
                 height: "100px",
               }}
               onClick={() => {
-                navigate.push("/buscador");
+                navigate("/Planodi/buscador");
               }}
             >
               <p

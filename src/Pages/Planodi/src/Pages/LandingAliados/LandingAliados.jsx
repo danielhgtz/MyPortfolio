@@ -13,6 +13,7 @@ import logoGris from "../../Assets/img/PLANODI_PNG_gris.webp";
 
 import "./LandingAliados.css";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { useNavigate } from "react-router-dom";
 
 const preguntasInit = [
   {
@@ -48,6 +49,7 @@ export default function LandingAliados() {
   const [preguntas, setPreguntas] = useState(preguntasInit);
   const [changeNav, setChangeNav] = useState(false);
   const [offSetY, setOffsetY] = useState(0);
+  const navigate = useNavigate();
 
   const mobile2 = useMediaQuery("(max-width:560px)");
 
@@ -80,7 +82,7 @@ export default function LandingAliados() {
             alt="logo"
             className={`landing-aliados-logo ${changeNav ? "active" : ""}`}
             onClick={() => {
-              window.open("https://planodi.com");
+              navigate("/Planodi", { replace: true });
             }}
           />
           {/*<div className="landing-aliados-boton">Registrar ahora</div>*/}
@@ -94,7 +96,7 @@ export default function LandingAliados() {
               e.target.style.setProperty("--y", `${y}px`);
             }}
             onClick={() => {
-              window.open("https://planodi.com/registro", "_blank");
+              navigate("/Planodi", { replace: true });
             }}
           >
             Registrarme ahora

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Suspense, lazy } from "react";
+import React, { useEffect, useState, Suspense, lazy, useRef } from "react";
 import axios from "axios";
 import { useNavigate, useLocation } from "react-router-dom";
 import { alpha, Grid } from "@material-ui/core";
@@ -59,6 +59,7 @@ export default function HomePage() {
     setOpenLoginModal,
   } = useAuthModals();
 
+  const EventosAUnClickRef = useRef(null);
   const classes = useStyles();
   const mobile = useMediaQuery("(max-width:960px)");
 
@@ -147,7 +148,7 @@ export default function HomePage() {
           style={{ paddingTop: "10px" }}
         >
           <Grid item>
-            <Navbar fix type="black" />
+            <Navbar fix type="black" EventosAUnClickRef={EventosAUnClickRef} />
           </Grid>
           {/*<Grid item style={{ width: "100%" }}>*/}
           {/*  <Buscador />*/}
@@ -203,7 +204,10 @@ export default function HomePage() {
               verMasButton
             />
           </div>
-          <EventosAUnClick setOpenLoginModal={setOpenLoginModal} />
+          <EventosAUnClick
+            setOpenLoginModal={setOpenLoginModal}
+            EventosAUnClickRef={EventosAUnClickRef}
+          />
           <AfiliarSection offSetY={offSetY} stateUser={stateUser} />
           <div
             style={{

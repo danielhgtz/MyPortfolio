@@ -1,5 +1,5 @@
 .fontLanding {
-  font-family: 'Inter', Roboto, sans-serif;
+  font-family: "Inter", Roboto, sans-serif;
 }
 
 .menuIcon {
@@ -33,13 +33,33 @@
 }
 .navbar-fixed.active {
   background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur( 7px );
-  -webkit-backdrop-filter: blur( 7px );
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+.flex {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  z-index: 2;
+}
+
+.planodiNavbarName {
+  margin-left: 15px;
+  left: 2rem;
+  font-family: "Caveat", cursive;
+  color: black;
+
+  width: 100%;
+  cursor: pointer;
+  font-size: 27px;
 }
 
 .img-logo-nav {
   position: absolute;
-  left: 2rem;
+  cursor: pointer;
+  left: 13rem;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -169,7 +189,11 @@
 /*cambio a celular*/
 @media screen and (max-width: 960px) {
   .img-logo-nav {
-    left: 5%;
+    left: 105%;
+  }
+  .planodiNavbarName {
+    margin-left: 5px;
+    font-size: 20px;
   }
   .navbar-centro {
     display: none;

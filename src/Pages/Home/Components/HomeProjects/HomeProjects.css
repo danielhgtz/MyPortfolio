@@ -1,6 +1,7 @@
 .color {
   color: white;
   pointer-events: none;
+  margin-top: 10px;
 }
 .HPDiv {
   padding-bottom: 180px;

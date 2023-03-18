@@ -16,8 +16,8 @@ const Home = () => {
   const homeProjectsRef = useRef(null);
 
   return (
-    <div className="blackBackground">
-      <div className="container ">
+    <div className="homeBackground">
+      <div className="homeContainer">
         <ParticlesBackground />
         <HomeMain />
         <HomeIntroductionText homeAboutRef={homeAboutRef} />

@@ -8,6 +8,7 @@
   color: white;
   padding-top: 50px;
   padding-bottom: 50px;
+  z-index: 5;
 }
 
 .HSTRow {
@@ -36,7 +37,7 @@
   pointer-events: none;
 }
 
-.row :hover {
+.HSTRow :hover {
   transform: scale(1.1);
   transition: 0.4s;
 }
