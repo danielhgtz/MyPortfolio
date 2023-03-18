@@ -1,3 +1,8 @@
+.pdfWrapper {
+  background: linear-gradient(90deg, #f8d5c6, #2e537c);
+  height: 120vh;
+}
+
 .pdfContainer {
   padding-top: 55px;
   margin: auto;
@@ -41,24 +46,13 @@
   background: rgba(100, 200, 200, 0);
 }
 
-.downloadContainerPDF a {
+.downloadContainerPDF {
   margin: auto;
   display: flex;
-
+  padding-right: 100px;
   cursor: pointer;
-  background: linear-gradient(
-      to right,
-      rgba(100, 200, 200, 0),
-      rgba(100, 200, 200, 0)
-    ),
-    linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255));
-  background-size: 100% 3px, 0 3px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-
-  transition: background-size 400ms;
 }
 
-a:hover {
-  background-size: 0 3px, 100% 3px;
+.downloadContainerPDF:hover {
+  transform: scale(1.05);
 }

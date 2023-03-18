@@ -30,7 +30,7 @@ const LaborSettlementCalculator = () => {
   // }, [isLogged]);
 
   return (
-    <div>
+    <div className="wrapperLSA">
       <NavBar />
       <StepperContextProvider>
         <PrimeraFechaContextProvider>

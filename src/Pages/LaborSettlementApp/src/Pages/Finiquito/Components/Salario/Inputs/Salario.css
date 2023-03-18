@@ -4,10 +4,10 @@
   text-align: center;
   width: 70%;
   margin: 0px;
-  align-items: center;
+
   margin: auto;
   margin-top: 60px;
-  align-items: center;
+
   font-family: "Raleway", sans-serif;
   border-radius: 15px;
   display: flex;
@@ -23,7 +23,7 @@
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   width: 300px;
-  height: 150px;
+  height: auto;
   padding: 10px;
 
   flex-direction: column;
@@ -40,10 +40,10 @@
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   width: 300px;
-  height: 150px;
+  height: auto;
   padding: 10px;
   flex-direction: column;
-
+  margin-bottom: 0px;
   color: black;
   margin-top: 0px;
   border-radius: 15px;

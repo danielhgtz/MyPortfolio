@@ -1,3 +1,4 @@
+import moment from "moment";
 import { Button } from "antd";
 import { GitHubWhiteVector } from "../../Assets/SocialVecotors/GitHubWhiteVector";
 import { LinkedinVector } from "../../Assets/SocialVecotors/LinkedinVector";
@@ -7,9 +8,9 @@ import "./Footer.css";
 export const Footer = () => {
   return (
     <div className="footerDiv">
-      <p className="footerName" onClick={navigateTop}>
-        Danielhgtz 2023
-      </p>
+      <h4 className="footerName" onClick={navigateTop}>
+        Danielhgtz {moment().year()}
+      </h4>
       <div className="footerSocialLinks">
         <Button
           size="large"

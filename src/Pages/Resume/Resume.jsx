@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { Document, Page, pdfjs } from "react-pdf";
 import { useNavigate } from "react-router-dom";
 import { DownloadVector } from "../../Assets/PDFAssets/DownloadVector";
@@ -27,7 +28,7 @@ const ResumePDF = () => {
   };
 
   return (
-    <div>
+    <div className="pdfWrapper">
       <Document
         className="pdfContainer"
         file="/PDFResume/ResumeDanielGutierrezENG.pdf"
@@ -40,14 +41,14 @@ const ResumePDF = () => {
       </Document>
       <div className="navResumePDF">
         <div className="nameContainerPDF">
-          <a className="navbarNamePDF" onClick={navigateHome}>
+          <div className="navbarNamePDF" onClick={navigateHome}>
             Daniel H. Gutierrez
-          </a>
+          </div>
         </div>
         <div className="downloadContainerPDF">
-          <a onClick={onButtonClickDownloadPDF}>
+          <div onClick={onButtonClickDownloadPDF}>
             <DownloadVector />
-          </a>
+          </div>
         </div>
       </div>
     </div>

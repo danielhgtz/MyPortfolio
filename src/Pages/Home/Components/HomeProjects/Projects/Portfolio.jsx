@@ -13,7 +13,7 @@ export const Portfolio = () => {
     <div>
       <ProjectComponent
         image={portfolioiImg}
-        title={"Portfolio"}
+        title={"Portfolio | Danielhgtz"}
         text={
           "Web application that shows my information, skills, technologies and projects that I have made as a developer."
         }

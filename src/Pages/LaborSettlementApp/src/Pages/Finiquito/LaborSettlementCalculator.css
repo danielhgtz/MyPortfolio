@@ -1,3 +1,11 @@
 .LSABackgroundColor {
   background: linear-gradient(90deg, #f8d5c6, #2e537c);
 }
+
+.wrapperLSA {
+  background: linear-gradient(90deg, #f8d5c6, #2e537c);
+  height: 100vh;
+
+  margin: auto;
+  top: 0%;
+}

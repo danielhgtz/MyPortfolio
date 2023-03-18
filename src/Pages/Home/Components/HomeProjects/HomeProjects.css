@@ -6,7 +6,6 @@
 .HPDiv {
   padding-bottom: 180px;
   padding-top: 40px;
-  position: relative;
 }
 
 .HPContainer {
@@ -14,7 +13,6 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
-  position: relative;
 }
 /* .HPContainer :hover {
   transform: scale(1.05);

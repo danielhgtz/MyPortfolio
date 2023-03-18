@@ -5,8 +5,16 @@
 
 .leftButtonParentStepper {
   scale: 105%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
 }
 
 .rigthButtonParentStepper {
   scale: 105%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
 }

@@ -8,13 +8,15 @@ export const NavBar = () => {
   const { isLogged, setIsLogged } = useIsLogged();
 
   const navigateHome = () => {
-    navigate("../", { replace: true });
+    navigate("../");
   };
 
   return (
     <div className="navLSA">
-      <div onClick={navigateHome} className="LSANavHomeTitle">
-        Home
+      <div className="nameContainerLSA">
+        <div className="navbarNameLSA" onClick={navigateHome}>
+          Daniel H. Gutierrez
+        </div>
       </div>
     </div>
   );
