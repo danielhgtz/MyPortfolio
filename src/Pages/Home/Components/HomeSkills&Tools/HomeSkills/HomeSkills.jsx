@@ -9,6 +9,8 @@ import { GitVector } from "../../../../../Assets/SkillsVectors/GitVector";
 import { ExpressVector } from "../../../../../Assets/SkillsVectors/ExpressVector";
 import { HtmlVector } from "../../../../../Assets/SkillsVectors/HtmlVector";
 import { CssVector } from "../../../../../Assets/SkillsVectors/CssVector";
+import { ViteVector } from "../../../../../Assets/SkillsVectors/ViteVector.jsx";
+import { TailwindCssVector } from "../../../../../Assets/SkillsVectors/TailwindCssVector.jsx";
 
 import "../HomeSkills&Tools.css";
 
@@ -34,6 +36,11 @@ export const HomeSkills = ({ homeSkillsRef }) => {
         </div>
         <div className="div1">
           <div className="innerDiv">
+            <ViteVector className="vector80px" />
+          </div>
+        </div>
+        <div className="div1">
+          <div className="innerDiv">
             <NodeJSVector className="vector120px" />
           </div>
         </div>
@@ -55,6 +62,11 @@ export const HomeSkills = ({ homeSkillsRef }) => {
         <div className="div1">
           <div className="innerDiv">
             <ExpressVector className="vector80px" />
+          </div>
+        </div>{" "}
+        <div className="div1">
+          <div className="innerDiv">
+            <TailwindCssVector className="vector100px" />
           </div>
         </div>
         <div className="div1">

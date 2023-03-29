@@ -5,6 +5,7 @@ import { LaborSettlementProject } from "./Projects/LaborSettlement";
 import { NutritionApp } from "./Projects/NutritionApp";
 import { Planodi } from "./Projects/Planodi";
 import { Portfolio } from "./Projects/Portfolio";
+import { TwitterCloneApp } from "./Projects/TwitterCloneApp";
 
 export const HomeProjects = ({ homeProjectsRef }) => {
   return (
@@ -17,6 +18,8 @@ export const HomeProjects = ({ homeProjectsRef }) => {
         <Planodi />
 
         <Portfolio />
+
+        <TwitterCloneApp />
 
         <NutritionApp />
 

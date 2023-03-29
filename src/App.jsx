@@ -29,12 +29,12 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home className="black" />} />
-          <Route path="Resume" element={<ResumePDF />} />
+          <Route path="resume" element={<ResumePDF />} />
           <Route
-            path="LaborSettlement"
+            path="laborSettlement"
             element={<LaborSettlementCalculator />}
           />
-          <Route path="Planodi/*" element={<Planodi />} />
+          <Route path="planodi/*" element={<Planodi />} />
           {/* <Route index element={<Explore />} /> */}
 
           {/* <Route path="buscador" element={<Explore />} /> */}

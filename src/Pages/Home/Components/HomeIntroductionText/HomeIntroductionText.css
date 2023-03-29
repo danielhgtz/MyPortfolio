@@ -54,13 +54,13 @@
 
 .socialLinks {
   display: flex;
-  justify-content: space-evenly;
   padding-bottom: 50px;
 }
 
 .github {
   margin: auto;
   display: flex;
+  /* align-content: center; */
   justify-content: center;
   align-items: center;
 }
