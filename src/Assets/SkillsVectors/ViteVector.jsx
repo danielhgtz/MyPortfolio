@@ -34,7 +34,7 @@ export const ViteVector = ({ className }) => {
             gradientUnits="userSpaceOnUse"
             gradientTransform="matrix(.07142 0 0 .07142 1.3398 1.8944)"
           >
-            <stop stop-color="#41D1FF" id="stop38"></stop>
+            <stop stopColor="#41D1FF" id="stop38"></stop>
             <stop offset="1" stopColor="#BD34FE" id="stop40"></stop>
           </linearGradient>
           <linearGradient

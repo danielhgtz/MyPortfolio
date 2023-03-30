@@ -1,3 +1,5 @@
+import React from "react";
+import { nanoid } from "nanoid";
 import { ProjectComponent } from "../ProjectComponent/ProjectComponent";
 
 import { InProgressVector } from "../../../../../Assets/ProjectVectors/InProgressVector";
@@ -16,6 +18,7 @@ export const AdministrationPallets = () => {
   return (
     <div>
       <ProjectComponent
+        index={6}
         vector={<InProgressVector />}
         title={
           "Administration Pallets for Tarimas Santa Anita, S.A. de C.V.  (In progress - Freelancing) "
@@ -24,30 +27,30 @@ export const AdministrationPallets = () => {
           "Web application dedicated to manage the invoice company information of Tarimas Santa Anita, S.A. de C.V."
         }
         technologies={[
-          <button className="PCButtonGlow">
+          <div key={nanoid()} className="PCButtonGlow">
             <JSVector className="vector40px" />
-          </button>,
-          <button className="PCButtonGlow">
+          </div>,
+          <div key={nanoid()} className="PCButtonGlow">
             <ReactVector className="vector40px" />
-          </button>,
-          <button className="PCButtonGlow">
+          </div>,
+          <div key={nanoid()} className="PCButtonGlow">
             <TypescriptVector className="vector40px" />
-          </button>,
-          <button className="PCButtonGlow">
+          </div>,
+          <div key={nanoid()} className="PCButtonGlow">
             <HtmlVector className="vector40px" />
-          </button>,
-          <button className="PCButtonGlow">
+          </div>,
+          <div key={nanoid()} className="PCButtonGlow">
             <CssVector className="vector40px" />
-          </button>,
-          <button className="PCButtonGlow">
+          </div>,
+          <div key={nanoid()} className="PCButtonGlow">
             <NodeJSVector className="vector40px" />
-          </button>,
-          <button className="PCButtonGlow">
+          </div>,
+          <div key={nanoid()} className="PCButtonGlow">
             <MySQLVector className="vector40px" />
-          </button>,
-          <button className="PCButtonGlow">
+          </div>,
+          <div key={nanoid()} className="PCButtonGlow">
             <ExpressVector className="vector40px" />
-          </button>,
+          </div>,
         ]}
       />
     </div>

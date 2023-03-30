@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^5.0.1",
     "@loadable/component": "^5.15.3",
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
@@ -19,6 +20,7 @@
     "formik": "^2.2.9",
     "material-ui-icons": "^1.0.0-beta.36",
     "moment": "^2.29.4",
+    "nanoid": "^4.0.2",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-date-picker": "^9.2.0",

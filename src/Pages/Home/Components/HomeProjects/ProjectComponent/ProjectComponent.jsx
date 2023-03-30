@@ -5,6 +5,7 @@ import { StartVector } from "../../../../../Assets/ProjectVectors/StartVector";
 import "./ProjectComponent.css";
 
 export const ProjectComponent = ({
+  index,
   image,
   vector,
   title,
@@ -15,7 +16,7 @@ export const ProjectComponent = ({
   demoLinkFx,
 }) => {
   return (
-    <div className="HPInnerDiv">
+    <div className="HPInnerDiv" key={index}>
       <div className="HPIndividualDiv">
         <div className="projectComponentDiv">
           <div className="PCImageCenter">

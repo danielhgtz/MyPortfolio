@@ -1,3 +1,6 @@
+import React from "react";
+import { nanoid } from "nanoid";
+
 import { ProjectComponent } from "../ProjectComponent/ProjectComponent";
 import portfolioiImg from "../../../../../Assets/Macbook/IMG_0013.png";
 import { Button } from "antd";
@@ -12,24 +15,25 @@ export const Portfolio = () => {
   return (
     <div>
       <ProjectComponent
+        index={3}
         image={portfolioiImg}
         title={"Portfolio | Danielhgtz"}
         text={
           "Web application that shows my information, skills, technologies and projects that I have made as a developer."
         }
         technologies={[
-          <button className="PCButtonGlow">
+          <div key={nanoid()} className="PCButtonGlow">
             <JSVector className="vector40px" />
-          </button>,
-          <button className="PCButtonGlow">
+          </div>,
+          <div key={nanoid()} className="PCButtonGlow">
             <ReactVector className="vector40px" />
-          </button>,
-          <button className="PCButtonGlow">
+          </div>,
+          <div key={nanoid()} className="PCButtonGlow">
             <HtmlVector className="vector40px" />
-          </button>,
-          <button className="PCButtonGlow">
+          </div>,
+          <div key={nanoid()} className="PCButtonGlow">
             <CssVector className="vector40px" />
-          </button>,
+          </div>,
         ]}
         gitHubLink={"https://github.com/danielhgtz/MyPortafolio"}
         booleanDemo={true}

@@ -1,3 +1,6 @@
+import React from "react";
+import { nanoid } from "nanoid";
+
 import { ProjectComponent } from "../ProjectComponent/ProjectComponent";
 import planodiImg from "../../../../../Assets/Macbook/IMG_0014.png";
 
@@ -20,36 +23,37 @@ export const Planodi = () => {
   return (
     <div>
       <ProjectComponent
+        index={2}
         image={planodiImg}
         title={"Planodi (Startup)"}
         text={
           "Collaboration in a startup dedicated to connect service providers with the end customer through a web platform. The goal is that people can compare and decide the best possible option for their event, creating it in a few clicks."
         }
         technologies={[
-          <button className="PCButtonGlow">
+          <div key={nanoid()} className="PCButtonGlow">
             <JSVector className="vector40px" />
-          </button>,
-          <button className="PCButtonGlow">
+          </div>,
+          <div key={nanoid()} className="PCButtonGlow">
             <ReactVector className="vector40px" />
-          </button>,
-          <button className="PCButtonGlow">
+          </div>,
+          <div key={nanoid()} className="PCButtonGlow">
             <TypescriptVector className="vector40px" />
-          </button>,
-          <button className="PCButtonGlow">
+          </div>,
+          <div key={nanoid()} className="PCButtonGlow">
             <HtmlVector className="vector40px" />
-          </button>,
-          <button className="PCButtonGlow">
+          </div>,
+          <div key={nanoid()} className="PCButtonGlow">
             <CssVector className="vector40px" />
-          </button>,
-          <button className="PCButtonGlow">
+          </div>,
+          <div key={nanoid()} className="PCButtonGlow">
             <NodeJSVector className="vector40px" />
-          </button>,
-          <button className="PCButtonGlow">
+          </div>,
+          <div key={nanoid()} className="PCButtonGlow">
             <MySQLVector className="vector40px" />
-          </button>,
-          <button className="PCButtonGlow">
+          </div>,
+          <div key={nanoid()} className="PCButtonGlow">
             <ExpressVector className="vector40px" />
-          </button>,
+          </div>,
         ]}
         gitHubLink={"https://github.com/EstebanPerez99/planodi"}
         booleanDemo={true}
