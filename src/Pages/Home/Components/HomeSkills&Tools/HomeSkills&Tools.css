@@ -61,3 +61,40 @@
   width: 140px;
   height: 140px;
 }
+
+/* RESPONSIVE */
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (max-width: 962px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/*Tablets */
+@media only screen and (max-width: 768px) {
+  .div1 {
+    border: 2px solid rgb(0, 128, 255);
+    height: 130px;
+    width: 140px;
+    margin: 15px;
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+  }
+
+  .vector140px {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+/* Cellphone */
+@media only screen and (max-width: 426px) {
+}
+
+/* Cellphone M*/
+@media only screen and (max-width: 375px) {
+}

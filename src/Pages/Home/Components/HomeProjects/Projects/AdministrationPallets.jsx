@@ -2,7 +2,7 @@ import React from "react";
 import { nanoid } from "nanoid";
 import { ProjectComponent } from "../ProjectComponent/ProjectComponent";
 
-import { InProgressVector } from "../../../../../Assets/ProjectVectors/InProgressVector";
+import toolsImg from "../../../../../Assets/Macbook/IMG_0016.png";
 import { JSVector } from "../../../../../Assets/SkillsVectors/JSVector";
 import { ReactVector } from "../../../../../Assets/SkillsVectors/ReactVector";
 import { TypescriptVector } from "../../../../../Assets/SkillsVectors/TypescriptVector";
@@ -19,7 +19,7 @@ export const AdministrationPallets = () => {
     <div>
       <ProjectComponent
         index={6}
-        vector={<InProgressVector />}
+        image={toolsImg}
         title={
           "Administration Pallets for Tarimas Santa Anita, S.A. de C.V.  (In progress - Freelancing) "
         }

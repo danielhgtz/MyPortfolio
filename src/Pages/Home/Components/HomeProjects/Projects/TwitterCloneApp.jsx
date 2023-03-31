@@ -1,7 +1,7 @@
 import { ProjectComponent } from "../ProjectComponent/ProjectComponent";
 import { nanoid } from "nanoid";
 
-import { InProgressVector } from "../../../../../Assets/ProjectVectors/InProgressVector";
+import toolsImg from "../../../../../Assets/Macbook/IMG_0016.png";
 import { JSVector } from "../../../../../Assets/SkillsVectors/JSVector";
 import { ReactVector } from "../../../../../Assets/SkillsVectors/ReactVector";
 import { ViteVector } from "../../../../../Assets/SkillsVectors/ViteVector";
@@ -19,7 +19,7 @@ export const TwitterCloneApp = () => {
     <div>
       <ProjectComponent
         index={4}
-        vector={<InProgressVector />}
+        image={toolsImg}
         title={"Twitter Clone App  (In progress) "}
         text={
           "Full stack Twitter Clone App connected to a MySQL DataBase implemented with Vite and Tailwind CSS."

@@ -1,8 +1,8 @@
 import React from "react";
 import { nanoid } from "nanoid";
-import { InProgressVector } from "../../../../../Assets/ProjectVectors/InProgressVector";
 import { ProjectComponent } from "../ProjectComponent/ProjectComponent";
 
+import toolsImg from "../../../../../Assets/Macbook/IMG_0016.png";
 import { JSVector } from "../../../../../Assets/SkillsVectors/JSVector";
 import { ReactVector } from "../../../../../Assets/SkillsVectors/ReactVector";
 import { TypescriptVector } from "../../../../../Assets/SkillsVectors/TypescriptVector";
@@ -17,7 +17,7 @@ export const NutritionApp = () => {
     <div>
       <ProjectComponent
         index={5}
-        vector={<InProgressVector />}
+        image={toolsImg}
         title={"Nutrition Web Application (In progress - Freelancing) "}
         text={
           "Web application dedicated to store patient consultation information to determine the type of diet that corresponds to them. Being a tracking tool for the administrator."

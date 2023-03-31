@@ -1,6 +1,6 @@
 import "./HomeMain.css";
 import ReactRotatingText from "react-rotating-text";
-import { TiltComponent } from "../../../../Components/TiltComponent/TiltComponent";
+import { HomeMainTiltComponent } from "../../../../Components/TiltComponent/TiltComponent";
 import personalImage from "../../../../Assets/PersonalImages/personalImage1.jpg";
 
 export const HomeMain = () => {
@@ -22,7 +22,7 @@ export const HomeMain = () => {
         />
       </div>
       <div className="homeDivProfilePicture">
-        <TiltComponent
+        <HomeMainTiltComponent
           className={"tiltComponentMain"}
           paramImg={personalImage}
         />

@@ -1,4 +1,15 @@
-.imgScale {
+.imgScaleHomeMain {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  height: auto;
+  width: 400px;
+  border-radius: 10%;
+}
+
+.imgScaleHomeIntroduction {
   margin: auto;
   justify-content: center;
   align-items: center;
@@ -21,7 +32,18 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .imgScale {
+  .imgScaleHomeMain {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    height: auto;
+    width: 95%;
+    border-radius: 10%;
+  }
+
+  .imgScaleHomeIntroduction {
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -35,7 +57,18 @@
 
 /* Cellphone */
 @media only screen and (max-width: 426px) {
-  .imgScale {
+  .imgScaleHomeMain {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    height: auto;
+    width: 95%;
+    border-radius: 10%;
+  }
+
+  .imgScaleHomeIntroduction {
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -49,7 +82,17 @@
 
 /* Cellphone M*/
 @media only screen and (max-width: 375px) {
-  .imgScale {
+  .imgScaleHomeMain {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    height: auto;
+    width: 95%;
+    border-radius: 10%;
+  }
+  .imgScaleHomeIntroduction {
     margin: auto;
     justify-content: center;
     align-items: center;

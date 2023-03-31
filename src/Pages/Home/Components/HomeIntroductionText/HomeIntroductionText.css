@@ -14,7 +14,7 @@
 }
 
 .divImage {
-  margin: 40px 40px auto 40px;
+  margin: 0% 2% auto 2%;
 }
 
 .tiltComponentOverraide {
@@ -24,10 +24,16 @@
   background-color: rgb(0, 128, 255);
   border-radius: 10%;
 }
+
 .divText {
   margin: 0px 50px;
   padding-bottom: 10px;
   font-family: "Heebo", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.homeIntroductionUL {
 }
 
 .blueColor {
@@ -91,4 +97,79 @@
   padding-bottom: 60px;
   font-size: 20px;
   padding-top: 50px;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (max-width: 962px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/*Tablets */
+@media only screen and (max-width: 768px) {
+  .divImage {
+    margin: 50px auto auto auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+  }
+
+  .tiltComponentOverraide {
+    display: flex;
+    height: 270px;
+    width: 305px;
+    background-color: rgb(0, 128, 255);
+    border-radius: 10%;
+  }
+
+  .divText {
+    margin: 0px 0px 0px 25px;
+    padding-bottom: 0px;
+    font-family: "Heebo", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+/* Cellphone */
+@media only screen and (max-width: 426px) {
+  .divImage {
+    margin: 50px auto auto auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+  }
+
+  .tiltComponentOverraide {
+    display: flex;
+    height: 145px;
+    width: 160px;
+    background-color: rgb(0, 128, 255);
+    border-radius: 10%;
+  }
+
+  .divText {
+    margin: 0px 2px 0px 0px;
+
+    padding-bottom: 0px;
+    font-family: "Heebo", sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  .homeIntroductionUL {
+    padding-left: 15px;
+  }
+}
+
+/* Cellphone M*/
+@media only screen and (max-width: 375px) {
 }

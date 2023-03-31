@@ -1,4 +1,4 @@
-import { TiltComponent } from "../../../../Components/TiltComponent/TiltComponent";
+import { HomeIntroductionTiltComponent } from "../../../../Components/TiltComponent/TiltComponent";
 import { Button } from "antd";
 import { LinkedinVector } from "../../../../Assets/SocialVecotors/LinkedinVector";
 import { GitHubWhiteVector } from "../../../../Assets/SocialVecotors/GitHubWhiteVector";
@@ -17,13 +17,13 @@ export const HomeIntroductionText = ({ homeAboutRef }) => {
       </div>
       <div className="homeIntroductionDiv">
         <div className="divImage">
-          <TiltComponent
+          <HomeIntroductionTiltComponent
             className={"tiltComponentOverraide"}
             paramImg={personalImage}
           />
         </div>
         <div className="divText">
-          <ul>
+          <ul className="homeIntroductionUL">
             <p>
               🚀 I'm a dedicated
               <span className="blueColor"> Software Developer </span>

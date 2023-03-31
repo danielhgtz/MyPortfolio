@@ -174,3 +174,43 @@
     background-position: 0 0;
   }
 }
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (max-width: 962px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/*Tablets */
+@media only screen and (max-width: 768px) {
+  .HPInnerDiv {
+    position: relative;
+    width: 320px;
+    height: 700px;
+    border: solid 3.5px rgb(0, 128, 255);
+    border-radius: 5px;
+    margin: 10px 10px;
+  }
+
+  .PCImg {
+    width: 300px;
+    height: auto;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Cellphone */
+@media only screen and (max-width: 426px) {
+}
+
+/* Cellphone M*/
+@media only screen and (max-width: 375px) {
+}

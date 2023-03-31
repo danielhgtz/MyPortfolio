@@ -20,7 +20,7 @@ const Home = () => {
       <div className="homeContainer">
         <ParticlesBackground />
         <HomeMain />
-        {/* <HomeIntroductionText homeAboutRef={homeAboutRef} /> */}
+        <HomeIntroductionText homeAboutRef={homeAboutRef} />
         <HomeSkills homeSkillsRef={homeSkillsRef} />
         <HomeTools />
         <HomeProjects homeProjectsRef={homeProjectsRef} />

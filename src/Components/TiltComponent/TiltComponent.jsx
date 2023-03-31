@@ -3,7 +3,7 @@ import Tilt from "react-parallax-tilt";
 
 import "./TiltComponent.css";
 
-export const TiltComponent = ({ className, paramImg }) => {
+export const HomeMainTiltComponent = ({ className, paramImg }) => {
   return (
     <Tilt
       tiltMaxAngleX={5}
@@ -12,7 +12,22 @@ export const TiltComponent = ({ className, paramImg }) => {
       glareEnable={false}
     >
       <div className={className}>
-        <img className="imgScale" src={paramImg} />
+        <img className="imgScaleHomeMain" src={paramImg} />
+      </div>
+    </Tilt>
+  );
+};
+
+export const HomeIntroductionTiltComponent = ({ className, paramImg }) => {
+  return (
+    <Tilt
+      tiltMaxAngleX={5}
+      tiltMaxAngleY={5}
+      perspective={300}
+      glareEnable={false}
+    >
+      <div className={className}>
+        <img className="imgScaleHomeIntroduction" src={paramImg} />
       </div>
     </Tilt>
   );
