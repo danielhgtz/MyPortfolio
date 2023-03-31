@@ -211,11 +211,11 @@
 @media only screen and (max-width: 426px) {
   .HPInnerDiv {
     position: relative;
-    width: 190px;
-    height: 630px;
+    width: 178px;
+    height: 670px;
     border: solid 3.5px rgb(0, 128, 255);
     border-radius: 5px;
-    margin: 5px 5px;
+    margin: 3px 3px;
   }
 
   .PCImg {

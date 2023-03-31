@@ -36,6 +36,12 @@
 
 /* Cellphone */
 @media only screen and (max-width: 426px) {
+  .HPContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+  }
 }
 
 /* Cellphone M*/
