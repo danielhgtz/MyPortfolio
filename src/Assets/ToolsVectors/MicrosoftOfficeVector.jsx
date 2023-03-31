@@ -1,8 +1,7 @@
-export const MicrosoftOfficeVector = () => {
+export const MicrosoftOfficeVector = ({ className }) => {
   return (
     <svg
-      width="120px"
-      height="120px"
+      className={className}
       viewBox="0.497 -67.31899999999999 198.998 198.998"
       xmlns="http://www.w3.org/2000/svg"
       fill="#ffffff"

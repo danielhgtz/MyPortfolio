@@ -93,6 +93,34 @@
 
 /* Cellphone */
 @media only screen and (max-width: 426px) {
+  .div1 {
+    border: 2px solid rgb(0, 128, 255);
+    height: 100px;
+    width: 110px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+  }
+  .vector80px {
+    width: 60px;
+    height: 60px;
+  }
+
+  .vector100px {
+    width: 80px;
+    height: 80px;
+  }
+
+  .vector120px {
+    width: 100px;
+    height: 100px;
+  }
+
+  .vector140px {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 /* Cellphone M*/

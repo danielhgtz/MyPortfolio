@@ -209,6 +209,59 @@
 
 /* Cellphone */
 @media only screen and (max-width: 426px) {
+  .HPInnerDiv {
+    position: relative;
+    width: 190px;
+    height: 630px;
+    border: solid 3.5px rgb(0, 128, 255);
+    border-radius: 5px;
+    margin: 5px 5px;
+  }
+
+  .PCImg {
+    width: 160px;
+    height: auto;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .PCTitle {
+    color: rgb(0, 128, 255);
+    font-size: 20px;
+    display: flex;
+    margin: 5px auto auto auto;
+    justify-content: center;
+    text-align: center;
+    font-weight: 900;
+    font-family: "Outfit", sans-serif;
+  }
+
+  .PCDescriptionProject {
+    margin: 5px 5px;
+    font-size: 13px;
+    text-align: justify;
+  }
+
+  .PCTecnologies {
+    text-align: center;
+  }
+
+  .PCFrameworks {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    cursor: initial;
+    padding-bottom: 5px;
+    flex-wrap: wrap;
+  }
+
+  .glowingColorButton {
+    padding: 5px;
+  }
 }
 
 /* Cellphone M*/

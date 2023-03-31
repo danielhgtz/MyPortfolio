@@ -18,7 +18,7 @@ export const HomeTools = () => {
         <div className="HSTRow">
           <div className="div1">
             <div className="innerDiv">
-              <VisualStudioVector />
+              <VisualStudioVector className="vector80px" />
             </div>
           </div>
           <div className="div1">
@@ -28,32 +28,32 @@ export const HomeTools = () => {
           </div>
           <div className="div1">
             <div className="innerDiv">
-              <FigmaVector />
+              <FigmaVector className="vector100px" />
             </div>
           </div>
           <div className="div1">
             <div className="innerDiv">
-              <PhotoShopVector />
+              <PhotoShopVector className="vector80px" />
             </div>
           </div>
           <div className="div1">
             <div className="innerDiv">
-              <PostmanVector />
+              <PostmanVector className="vector80px" />
             </div>
           </div>
           <div className="div1">
             <div className="innerDiv">
-              <SlackVector />
+              <SlackVector className="vector80px" />
             </div>
           </div>
           <div className="div1">
             <div className="innerDiv">
-              <MicrosoftOfficeVector />
+              <MicrosoftOfficeVector className="vector100px" />
             </div>
           </div>
           <div className="div1">
             <div className="innerDiv">
-              <AwsVector />
+              <AwsVector className="vector80px" />
             </div>
           </div>
         </div>

@@ -88,3 +88,47 @@
   -o-transition: box-shadow 0.2s ease-in;
 }
 /* ///////////////////////// */
+
+@keyframes glowing-glowing {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/*Responsive */
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (max-width: 962px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/*Tablets */
+@media only screen and (max-width: 768px) {
+}
+
+/* Cellphone */
+@media only screen and (max-width: 426px) {
+  .vector40px {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+/* Cellphone M*/
+@media only screen and (max-width: 375px) {
+}
