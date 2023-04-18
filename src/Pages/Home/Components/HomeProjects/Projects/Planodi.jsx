@@ -12,13 +12,10 @@ import { CssVector } from "../../../../../Assets/SkillsVectors/CssVector";
 import { NodeJSVector } from "../../../../../Assets/SkillsVectors/NodeJSVector";
 import { MySQLVector } from "../../../../../Assets/SkillsVectors/MySQLVector";
 import { ExpressVector } from "../../../../../Assets/SkillsVectors/ExpressVector";
-import { useNavigate } from "react-router-dom";
 
 export const Planodi = () => {
-  const navigate = useNavigate();
-
   const navigatePlanodi = () => {
-    navigate("./Planodi");
+    window.open("https://www.planodi.com/", "_blank");
   };
   return (
     <div>
@@ -55,8 +52,9 @@ export const Planodi = () => {
             <ExpressVector className="vector40px" />
           </div>,
         ]}
-        gitHubLink={"https://github.com/EstebanPerez99/planodi"}
+        booleanGithub={false}
         booleanDemo={true}
+        demoTitle={"Planodi"}
         demoLinkFx={navigatePlanodi}
       />
     </div>

@@ -35,6 +35,7 @@ export const Portfolio = () => {
             <CssVector className="vector40px" />
           </div>,
         ]}
+        booleanGithub={true}
         gitHubLink={"https://github.com/danielhgtz/MyPortafolio"}
         booleanDemo={true}
         demoLink={"/"}

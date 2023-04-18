@@ -212,7 +212,7 @@
   .HPInnerDiv {
     position: relative;
     width: 178px;
-    height: auto;
+    height: 700px;
     border: solid 3.5px rgb(0, 128, 255);
     border-radius: 5px;
     margin: 3px 3px;

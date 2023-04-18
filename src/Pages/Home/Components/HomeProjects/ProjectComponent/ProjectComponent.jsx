@@ -11,9 +11,11 @@ export const ProjectComponent = ({
   title,
   text,
   technologies,
+  booleanGithub,
   gitHubLink,
   booleanDemo,
   demoLinkFx,
+  demoTitle,
 }) => {
   return (
     <div className="HPInnerDiv" key={index}>
@@ -30,13 +32,16 @@ export const ProjectComponent = ({
           <div className="PCFrameworks">{technologies}</div>
 
           <div className="PCButtonsDiv">
-            <Button className="glowingColorButton" href={gitHubLink}>
-              <GitHubVector className="vector20px" />
-              Github
-            </Button>
+            {booleanGithub ? (
+              <Button className="glowingColorButton" href={gitHubLink}>
+                <GitHubVector className="vector20px" />
+                Github
+              </Button>
+            ) : null}
+
             {booleanDemo ? (
               <Button className="glowingColorButton" onClick={demoLinkFx}>
-                <StartVector /> Demo
+                <StartVector /> {demoTitle ? demoTitle : "Demo"}
               </Button>
             ) : null}
           </div>

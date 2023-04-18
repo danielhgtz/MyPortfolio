@@ -4,22 +4,15 @@ import Home from "./Pages/Home/Home";
 import ResumePDF from "./Pages/Resume/Resume";
 
 import LaborSettlementCalculator from "./Pages/LaborSettlementApp/src/Pages/Finiquito/LaborSettlementCalculator";
-import HomePage from "./Pages/Planodi/src/Pages/HomePage/HomePage";
 
 import ReactDOM from "react-dom";
 import { ThemeProvider } from "@material-ui/core/styles";
 
-import theme from "./Pages/Planodi/src/theme";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 // import "./myStyles.css";
 import { Provider } from "react-redux";
-import { store } from "./Pages/Planodi/src/store";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
-
-import { Planodi } from "./Pages/Planodi/src/index";
-import Explore from "./Pages/Planodi/src/Pages/Explore/Explore";
 
 import "./App.css";
 
@@ -34,7 +27,7 @@ const App = () => {
             path="laborSettlement"
             element={<LaborSettlementCalculator />}
           />
-          <Route path="planodi/*" element={<Planodi />} />
+          {/* <Route path="planodi/*" element={<Planodi />} /> */}
           {/* <Route index element={<Explore />} /> */}
 
           {/* <Route path="buscador" element={<Explore />} /> */}

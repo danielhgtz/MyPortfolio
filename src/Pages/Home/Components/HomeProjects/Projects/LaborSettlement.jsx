@@ -55,6 +55,7 @@ export const LaborSettlementProject = () => {
             <ExpressVector className="vector40px" />
           </div>,
         ]}
+        booleanGithub={true}
         gitHubLink={
           "https://github.com/danielhgtz/LaborSettlementCalculatorApp"
         }
