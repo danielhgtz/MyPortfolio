@@ -19,11 +19,11 @@ export const HomeProjects = ({ homeProjectsRef }) => {
 
         <Portfolio />
 
-        <TwitterCloneApp />
+        {/* <TwitterCloneApp />
 
         <NutritionApp />
 
-        <AdministrationPallets />
+        <AdministrationPallets /> */}
       </div>
     </div>
   );
